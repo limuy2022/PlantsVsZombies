@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://vma83vm8xme1"]
+
+[ext_resource type="Script" path="res://script/start.gd" id="1_diey2"]
+[ext_resource type="Texture2D" uid="uid://djgugfym6kmxs" path="res://resources/graphics/Screen/MainMenu.png" id="1_hcac3"]
+[ext_resource type="Texture2D" uid="uid://rair8nt8yqyr" path="res://resources/graphics/Screen/Adventure_0.png" id="2_tacmj"]
+[ext_resource type="Texture2D" uid="uid://cyiex88drbapw" path="res://resources/graphics/Screen/Adventure_1.png" id="3_imcx1"]
+[ext_resource type="Script" path="res://script/startgame.gd" id="4_kkjh3"]
+
+[node name="Start" type="Node2D"]
+script = ExtResource("1_diey2")
+
+[node name="background" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.28428, 0.997078)
+texture = ExtResource("1_hcac3")
+
+[node name="startgame" type="TextureButton" parent="."]
+offset_left = 633.0
+offset_top = 86.0
+offset_right = 799.0
+offset_bottom = 156.0
+scale = Vector2(2.30264, 2.4808)
+texture_normal = ExtResource("2_tacmj")
+texture_pressed = ExtResource("3_imcx1")
+script = ExtResource("4_kkjh3")
+
+[connection signal="pressed" from="startgame" to="startgame" method="_on_pressed"]

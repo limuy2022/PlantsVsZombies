@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://b5j3xo4vubh8e"]
+
+[ext_resource type="Script" path="res://script/main.gd" id="1_fjoh4"]
+[ext_resource type="Texture2D" uid="uid://vf5xloqepm5t" path="res://resources/graphics/Screen/ChooserBackground.png" id="2_bsqlv"]
+[ext_resource type="Texture2D" uid="uid://bij41cq8hea0t" path="res://resources/graphics/Screen/PanelBackground.png" id="3_ahl1d"]
+[ext_resource type="Script" path="res://script/plants_menu.gd" id="4_a2jr2"]
+[ext_resource type="Texture2D" uid="uid://c403k1edf7w7e" path="res://resources/graphics/Cards/card_peashooter.png" id="5_ptdp0"]
+[ext_resource type="Script" path="res://script/card.gd" id="6_1t3kk"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_fjoh4")
+
+[node name="background" type="TextureRect" parent="."]
+
+[node name="plants_bar" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_bsqlv")
+
+[node name="score" type="Label" parent="."]
+offset_left = 17.0
+offset_top = 57.0
+offset_right = 57.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="plants_menu" type="TextureRect" parent="."]
+offset_left = 4.0
+offset_top = 605.0
+offset_right = 469.0
+offset_bottom = 1118.0
+texture = ExtResource("3_ahl1d")
+script = ExtResource("4_a2jr2")
+
+[node name="Peashooter" type="TextureButton" parent="." groups=["plants_card"]]
+offset_left = 7.0
+offset_top = 117.0
+offset_right = 72.0
+offset_bottom = 207.0
+texture_normal = ExtResource("5_ptdp0")
+script = ExtResource("6_1t3kk")
+
+[connection signal="pack_plants_card" from="plants_menu" to="." method="_on_plants_menu_pack_plants_card"]

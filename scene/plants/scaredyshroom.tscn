@@ -1,0 +1,90 @@
+[gd_scene load_steps=20 format=3 uid="uid://bk1tfjh5pl3qd"]
+
+[ext_resource type="Texture2D" uid="uid://bj20a8nogy3ys" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_0.png" id="1_bfkc3"]
+[ext_resource type="Texture2D" uid="uid://besa46q13lil8" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_1.png" id="2_q5rdt"]
+[ext_resource type="Texture2D" uid="uid://cbqsj5vrx7f7v" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_2.png" id="3_eicge"]
+[ext_resource type="Texture2D" uid="uid://b0lfohlt1g53m" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_3.png" id="4_s1r1c"]
+[ext_resource type="Texture2D" uid="uid://2sogmeewrdhc" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_4.png" id="5_t7fw3"]
+[ext_resource type="Texture2D" uid="uid://y0ld02pnbh2k" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_5.png" id="6_o0lm0"]
+[ext_resource type="Texture2D" uid="uid://ornm2401kuk" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_6.png" id="7_oojyf"]
+[ext_resource type="Texture2D" uid="uid://bhedt3ysh7uyj" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_7.png" id="8_um2mv"]
+[ext_resource type="Texture2D" uid="uid://dnlmcjlp3qfht" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_8.png" id="9_hxi2y"]
+[ext_resource type="Texture2D" uid="uid://cknu0c3hyx5s6" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_9.png" id="10_rnvla"]
+[ext_resource type="Texture2D" uid="uid://dwuiwdvvvbjiv" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_10.png" id="11_d7dhu"]
+[ext_resource type="Texture2D" uid="uid://bl1lpgodxmvfs" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_11.png" id="12_xafdx"]
+[ext_resource type="Texture2D" uid="uid://c12ywujdpnb17" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_12.png" id="13_t3be5"]
+[ext_resource type="Texture2D" uid="uid://cfd00jiweo8tc" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_13.png" id="14_quxou"]
+[ext_resource type="Texture2D" uid="uid://byinar85r0eg4" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_14.png" id="15_cn7s4"]
+[ext_resource type="Texture2D" uid="uid://coag74pvaol4" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_15.png" id="16_jpusa"]
+[ext_resource type="Texture2D" uid="uid://c7v01wq774fpk" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_16.png" id="17_3g5q5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_75srr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bfkc3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_q5rdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_eicge")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_s1r1c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_t7fw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_o0lm0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_oojyf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_um2mv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_hxi2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_rnvla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_d7dhu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_xafdx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_t3be5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_quxou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_cn7s4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_jpusa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3g5q5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g0pyh"]
+radius = 25.0
+height = 74.0
+
+[node name="scaredyshroom" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_75srr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_g0pyh")

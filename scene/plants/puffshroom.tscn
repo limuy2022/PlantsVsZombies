@@ -1,0 +1,78 @@
+[gd_scene load_steps=17 format=3 uid="uid://w1va5ia8ugxc"]
+
+[ext_resource type="Texture2D" uid="uid://wsxg57kd88vv" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_0.png" id="1_6vnca"]
+[ext_resource type="Texture2D" uid="uid://bn0f22s4lspbl" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_1.png" id="2_61tm5"]
+[ext_resource type="Texture2D" uid="uid://pdq25ib25v3a" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_2.png" id="3_jvxfk"]
+[ext_resource type="Texture2D" uid="uid://bitng6nk11cex" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_3.png" id="4_44mqt"]
+[ext_resource type="Texture2D" uid="uid://n7e7tk5w1k5a" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_4.png" id="5_3t53q"]
+[ext_resource type="Texture2D" uid="uid://m5pa1h0uh6i3" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_5.png" id="6_fwrvp"]
+[ext_resource type="Texture2D" uid="uid://b28c2lqbthdoe" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_6.png" id="7_tmyu2"]
+[ext_resource type="Texture2D" uid="uid://doebvh023cowe" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_7.png" id="8_mtv7t"]
+[ext_resource type="Texture2D" uid="uid://cwbtabxbvfrxa" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_8.png" id="9_ye65y"]
+[ext_resource type="Texture2D" uid="uid://cfey3a3u6sq3l" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_9.png" id="10_wilqn"]
+[ext_resource type="Texture2D" uid="uid://byw82l1jo5nah" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_10.png" id="11_ih1av"]
+[ext_resource type="Texture2D" uid="uid://d0uxrmsq6tvih" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_11.png" id="12_gyys1"]
+[ext_resource type="Texture2D" uid="uid://wmvceakbjliy" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_12.png" id="13_ug7bv"]
+[ext_resource type="Texture2D" uid="uid://dgl6ficrsah6w" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_13.png" id="14_mg12w"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lmxjf"]
+radius = 21.8403
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iovrv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6vnca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_61tm5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jvxfk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_44mqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3t53q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_fwrvp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_tmyu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_mtv7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ye65y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wilqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ih1av")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_gyys1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ug7bv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_mg12w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="puffshroom" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 17)
+shape = SubResource("CircleShape2D_lmxjf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_iovrv")

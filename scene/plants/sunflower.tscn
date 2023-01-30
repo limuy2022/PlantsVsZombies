@@ -1,0 +1,93 @@
+[gd_scene load_steps=21 format=3 uid="uid://cdxg440k0rhpj"]
+
+[ext_resource type="Texture2D" uid="uid://dm8ft8cdl7c8b" path="res://resources/graphics/Plants/SunFlower/SunFlower_0.png" id="1_1f5in"]
+[ext_resource type="Texture2D" uid="uid://brv1ruke4kji6" path="res://resources/graphics/Plants/SunFlower/SunFlower_1.png" id="2_d5fdn"]
+[ext_resource type="Texture2D" uid="uid://ovmdrx1cdl3e" path="res://resources/graphics/Plants/SunFlower/SunFlower_2.png" id="3_ylrlk"]
+[ext_resource type="Texture2D" uid="uid://b4sek8065ie4n" path="res://resources/graphics/Plants/SunFlower/SunFlower_3.png" id="4_n10sf"]
+[ext_resource type="Texture2D" uid="uid://br0ql28qkobim" path="res://resources/graphics/Plants/SunFlower/SunFlower_4.png" id="5_48ifj"]
+[ext_resource type="Texture2D" uid="uid://ivc27ihoba0t" path="res://resources/graphics/Plants/SunFlower/SunFlower_5.png" id="6_3t5ah"]
+[ext_resource type="Texture2D" uid="uid://dwk1idb45jqcx" path="res://resources/graphics/Plants/SunFlower/SunFlower_6.png" id="7_wgy65"]
+[ext_resource type="Texture2D" uid="uid://svfm1wayypli" path="res://resources/graphics/Plants/SunFlower/SunFlower_7.png" id="8_tuu2n"]
+[ext_resource type="Texture2D" uid="uid://dbu0vsi10im6a" path="res://resources/graphics/Plants/SunFlower/SunFlower_8.png" id="9_1mmfo"]
+[ext_resource type="Texture2D" uid="uid://ced1sis26ek01" path="res://resources/graphics/Plants/SunFlower/SunFlower_9.png" id="10_yel2d"]
+[ext_resource type="Texture2D" uid="uid://cp4wor37webot" path="res://resources/graphics/Plants/SunFlower/SunFlower_10.png" id="11_0u4d4"]
+[ext_resource type="Texture2D" uid="uid://bkjec7ar5rl8y" path="res://resources/graphics/Plants/SunFlower/SunFlower_11.png" id="12_p47qo"]
+[ext_resource type="Texture2D" uid="uid://yxfqrjq3fhrt" path="res://resources/graphics/Plants/SunFlower/SunFlower_12.png" id="13_02kre"]
+[ext_resource type="Texture2D" uid="uid://dd3leodgbnpn7" path="res://resources/graphics/Plants/SunFlower/SunFlower_13.png" id="14_wv18w"]
+[ext_resource type="Texture2D" uid="uid://bme6brcnbyt4d" path="res://resources/graphics/Plants/SunFlower/SunFlower_14.png" id="15_2chyl"]
+[ext_resource type="Texture2D" uid="uid://c72vd7e1iamut" path="res://resources/graphics/Plants/SunFlower/SunFlower_15.png" id="16_ajaj2"]
+[ext_resource type="Texture2D" uid="uid://qb520jhte37v" path="res://resources/graphics/Plants/SunFlower/SunFlower_16.png" id="17_6eudk"]
+[ext_resource type="Texture2D" uid="uid://j8paye5jqhdo" path="res://resources/graphics/Plants/SunFlower/SunFlower_17.png" id="18_dwtur"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y4tbv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1f5in")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_d5fdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ylrlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n10sf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_48ifj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3t5ah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wgy65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tuu2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1mmfo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_yel2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0u4d4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_p47qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_02kre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_wv18w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2chyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ajaj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6eudk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_dwtur")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u2l3m"]
+radius = 34.1321
+
+[node name="sunflower" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_y4tbv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_u2l3m")

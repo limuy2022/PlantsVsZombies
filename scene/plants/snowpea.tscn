@@ -1,0 +1,81 @@
+[gd_scene load_steps=18 format=3 uid="uid://p7fw2dkexeh0"]
+
+[ext_resource type="Texture2D" uid="uid://p81nogamdg1i" path="res://resources/graphics/Plants/SnowPea/SnowPea_0.png" id="1_dilld"]
+[ext_resource type="Texture2D" uid="uid://c3hqud5qp3lem" path="res://resources/graphics/Plants/SnowPea/SnowPea_1.png" id="2_7e1q1"]
+[ext_resource type="Texture2D" uid="uid://c2n2v7oorxn73" path="res://resources/graphics/Plants/SnowPea/SnowPea_2.png" id="3_lyavn"]
+[ext_resource type="Texture2D" uid="uid://csh3lqsl70j0b" path="res://resources/graphics/Plants/SnowPea/SnowPea_3.png" id="4_fbyqw"]
+[ext_resource type="Texture2D" uid="uid://b1e7mef6rcrmp" path="res://resources/graphics/Plants/SnowPea/SnowPea_4.png" id="5_vmf8o"]
+[ext_resource type="Texture2D" uid="uid://c3uv5c6mxu4sv" path="res://resources/graphics/Plants/SnowPea/SnowPea_5.png" id="6_pa13f"]
+[ext_resource type="Texture2D" uid="uid://bqyt34woceyd8" path="res://resources/graphics/Plants/SnowPea/SnowPea_6.png" id="7_cjlcr"]
+[ext_resource type="Texture2D" uid="uid://n6i5x3y6nvu2" path="res://resources/graphics/Plants/SnowPea/SnowPea_7.png" id="8_rlejg"]
+[ext_resource type="Texture2D" uid="uid://ct4ujmdn1xf41" path="res://resources/graphics/Plants/SnowPea/SnowPea_8.png" id="9_jv1yq"]
+[ext_resource type="Texture2D" uid="uid://du3efmqnjvggh" path="res://resources/graphics/Plants/SnowPea/SnowPea_9.png" id="10_d35s4"]
+[ext_resource type="Texture2D" uid="uid://0q353i6rltxr" path="res://resources/graphics/Plants/SnowPea/SnowPea_10.png" id="11_q4en7"]
+[ext_resource type="Texture2D" uid="uid://cy2r32olb5eio" path="res://resources/graphics/Plants/SnowPea/SnowPea_11.png" id="12_si8gd"]
+[ext_resource type="Texture2D" uid="uid://ceetpjq3qdf1p" path="res://resources/graphics/Plants/SnowPea/SnowPea_12.png" id="13_rrgsv"]
+[ext_resource type="Texture2D" uid="uid://dlmjvbxgss7sy" path="res://resources/graphics/Plants/SnowPea/SnowPea_13.png" id="14_jituy"]
+[ext_resource type="Texture2D" uid="uid://buakb8qvxct4w" path="res://resources/graphics/Plants/SnowPea/SnowPea_14.png" id="15_fl4on"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q46vg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dilld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7e1q1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lyavn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_fbyqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vmf8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pa13f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cjlcr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rlejg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jv1yq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_d35s4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_q4en7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_si8gd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_rrgsv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_jituy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fl4on")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pub8c"]
+radius = 38.0132
+
+[node name="snowpea" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_q46vg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_pub8c")

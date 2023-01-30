@@ -15,6 +15,10 @@ run/main_scene="res://scene/start.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+PlantsBarAutoload="*res://script/plants_bar_autoload.gd"
+
 [display]
 
 window/size/viewport_height=600

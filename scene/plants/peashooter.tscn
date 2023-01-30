@@ -1,0 +1,76 @@
+[gd_scene load_steps=16 format=3 uid="uid://bn3bd04rwgsiy"]
+
+[ext_resource type="Texture2D" uid="uid://dtj7je1prrr31" path="res://resources/graphics/Plants/Peashooter/Peashooter_0.png" id="1_gpfoi"]
+[ext_resource type="Texture2D" uid="uid://d1cft4mvtpgbt" path="res://resources/graphics/Plants/Peashooter/Peashooter_1.png" id="2_7v61s"]
+[ext_resource type="Texture2D" uid="uid://c0gkl01238tgk" path="res://resources/graphics/Plants/Peashooter/Peashooter_2.png" id="3_xavce"]
+[ext_resource type="Texture2D" uid="uid://c8nw4rnji2nhr" path="res://resources/graphics/Plants/Peashooter/Peashooter_3.png" id="4_dnxe8"]
+[ext_resource type="Texture2D" uid="uid://d3cm5ubtnilhr" path="res://resources/graphics/Plants/Peashooter/Peashooter_4.png" id="5_8q1vm"]
+[ext_resource type="Texture2D" uid="uid://cr5qhfvemp3lh" path="res://resources/graphics/Plants/Peashooter/Peashooter_5.png" id="6_ec4wu"]
+[ext_resource type="Texture2D" uid="uid://dm6m21thwu74n" path="res://resources/graphics/Plants/Peashooter/Peashooter_6.png" id="7_35n7a"]
+[ext_resource type="Texture2D" uid="uid://4lvrtn7i3stv" path="res://resources/graphics/Plants/Peashooter/Peashooter_7.png" id="8_wv8pe"]
+[ext_resource type="Texture2D" uid="uid://dpy7jmigld6rv" path="res://resources/graphics/Plants/Peashooter/Peashooter_8.png" id="9_tal1b"]
+[ext_resource type="Texture2D" uid="uid://c2ryqv7vkwvea" path="res://resources/graphics/Plants/Peashooter/Peashooter_9.png" id="10_7x7bb"]
+[ext_resource type="Texture2D" uid="uid://cy3r4cqwf2ren" path="res://resources/graphics/Plants/Peashooter/Peashooter_10.png" id="11_7nshf"]
+[ext_resource type="Texture2D" uid="uid://c2xrc3u1hffby" path="res://resources/graphics/Plants/Peashooter/Peashooter_11.png" id="12_r26qo"]
+[ext_resource type="Texture2D" uid="uid://bci4hmmmfbhpf" path="res://resources/graphics/Plants/Peashooter/Peashooter_12.png" id="13_c3gs8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rjoyw"]
+radius = 39.8246
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xvtpa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gpfoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7v61s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xavce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dnxe8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8q1vm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ec4wu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_35n7a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_wv8pe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_tal1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7x7bb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_7nshf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_r26qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_c3gs8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="peashooter" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-100, 255)
+shape = SubResource("CircleShape2D_rjoyw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-95, 259)
+sprite_frames = SubResource("SpriteFrames_xvtpa")
+frame_progress = 0.799108

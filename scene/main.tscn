@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://b5j3xo4vubh8e"]
+[gd_scene load_steps=8 format=3 uid="uid://b5j3xo4vubh8e"]
 
 [ext_resource type="Script" path="res://script/main.gd" id="1_fjoh4"]
 [ext_resource type="Texture2D" uid="uid://vf5xloqepm5t" path="res://resources/graphics/Screen/ChooserBackground.png" id="2_bsqlv"]
-[ext_resource type="Texture2D" uid="uid://bij41cq8hea0t" path="res://resources/graphics/Screen/PanelBackground.png" id="3_ahl1d"]
+[ext_resource type="Script" path="res://script/score.gd" id="3_mx5tl"]
+[ext_resource type="Texture2D" uid="uid://8a6adp2pegib" path="res://resources/graphics/Screen/plants_board.png" id="3_yj82m"]
 [ext_resource type="Script" path="res://script/plants_menu.gd" id="4_a2jr2"]
-[ext_resource type="Texture2D" uid="uid://c403k1edf7w7e" path="res://resources/graphics/Cards/card_peashooter.png" id="5_ptdp0"]
-[ext_resource type="Script" path="res://script/card.gd" id="6_1t3kk"]
+[ext_resource type="Texture2D" uid="uid://c001516sdml2" path="res://resources/graphics/Screen/StartButton.png" id="14_8ce7h"]
+[ext_resource type="Script" path="res://script/start_fight.gd" id="15_8576h"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_fjoh4")
@@ -18,29 +19,34 @@ offset_bottom = 40.0
 texture = ExtResource("2_bsqlv")
 
 [node name="score" type="Label" parent="."]
-offset_left = 17.0
-offset_top = 57.0
-offset_right = 57.0
-offset_bottom = 83.0
+offset_left = 18.0
+offset_top = 59.0
+offset_right = 58.0
+offset_bottom = 85.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
+script = ExtResource("3_mx5tl")
 
 [node name="plants_menu" type="TextureRect" parent="."]
 offset_left = 4.0
 offset_top = 605.0
 offset_right = 469.0
 offset_bottom = 1118.0
-texture = ExtResource("3_ahl1d")
+scale = Vector2(0.409074, 0.409074)
+texture = ExtResource("3_yj82m")
 script = ExtResource("4_a2jr2")
 
-[node name="Peashooter" type="TextureButton" parent="." groups=["plants_card"]]
-offset_left = 7.0
-offset_top = 117.0
-offset_right = 72.0
-offset_bottom = 207.0
-texture_normal = ExtResource("5_ptdp0")
-script = ExtResource("6_1t3kk")
+[node name="start_fight" type="TextureButton" parent="."]
+offset_left = 164.0
+offset_top = 561.0
+offset_right = 318.0
+offset_bottom = 601.0
+texture_normal = ExtResource("14_8ce7h")
+script = ExtResource("15_8576h")
 
-[connection signal="pack_plants_card" from="plants_menu" to="." method="_on_plants_menu_pack_plants_card"]
+[node name="sumtimer" type="Timer" parent="."]
+
+[connection signal="pressed" from="start_fight" to="start_fight" method="_on_pressed"]
+[connection signal="timeout" from="sumtimer" to="." method="_on_sumtimer_timeout"]

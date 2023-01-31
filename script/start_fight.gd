@@ -18,4 +18,4 @@ func _on_pressed():
 	PlantsBarAutoload.startfight = true
 	$"../plants_menu".hide()
 	$"../sumtimer".start()
-	get_tree().call_group("plants_card", "try_to_free")
+	get_tree().call_group("plants_card", "start_to_fight")

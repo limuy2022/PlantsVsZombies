@@ -1,5 +1,6 @@
-[gd_scene load_steps=22 format=3 uid="uid://c31i1x7ve5vs"]
+[gd_scene load_steps=23 format=3 uid="uid://c31i1x7ve5vs"]
 
+[ext_resource type="Script" path="res://script/plants/spikeweed.gd" id="1_0puo5"]
 [ext_resource type="Texture2D" uid="uid://6718y5goax78" path="res://resources/graphics/Plants/Spikeweed/Spikeweed/Spikeweed_0.png" id="1_frn0c"]
 [ext_resource type="Texture2D" uid="uid://yb2ym28i5jpp" path="res://resources/graphics/Plants/Spikeweed/Spikeweed/Spikeweed_1.png" id="2_l1778"]
 [ext_resource type="Texture2D" uid="uid://56iil6i5ueu3" path="res://resources/graphics/Plants/Spikeweed/Spikeweed/Spikeweed_2.png" id="3_311bi"]
@@ -90,9 +91,12 @@ radius = 12.9661
 height = 84.061
 
 [node name="spikeweed" type="Area2D"]
+script = ExtResource("1_0puo5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_xh5f4")
+autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.55977

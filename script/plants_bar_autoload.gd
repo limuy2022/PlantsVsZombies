@@ -17,9 +17,9 @@ var zombie_number = [0, 0, 0, 0, 0]
 # 当前阳光数
 var sun = 0
 # Y轴坐标
-var grassy = []
+var grassy = [120, 220, 320, 420, 520]
 # X轴坐标
-var grassx = []
+var grassx = [300, 380, 460, 540, 620, 700, 780, 860, 940]
 # 是否当前有植物正准备种植
 var is_planting = false
 
@@ -29,6 +29,25 @@ func add():
 			used[i] = true
 			choose += 1
 			return [i, pos[i]]
+	
+# 将自己的坐标转换成草坪上的坐标		
+func turn_pos_to_grass(xinput, yinput):
+	# 找到自己最接近哪个区域
+	var x
+	var xmin = 1e8
+	var y
+	var ymin = 1e8
+	for i in range(0, len(PlantsBarAutoload.grassx)):
+		var tmp = abs(xinput - PlantsBarAutoload.grassx[i])
+		if tmp < xmin:
+			xmin = tmp
+			x = i
+	for i in range(0, len(PlantsBarAutoload.grassy)):
+		var tmp = abs(yinput - PlantsBarAutoload.grassy[i])
+		if tmp < ymin:
+			ymin = tmp
+			y = i
+	return [x, y]
 
 func cancel(index):
 	used[index] = false

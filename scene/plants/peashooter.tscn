@@ -1,6 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://bn3bd04rwgsiy"]
+[gd_scene load_steps=17 format=3 uid="uid://bgv3y2gbcpku1"]
 
 [ext_resource type="Texture2D" uid="uid://dtj7je1prrr31" path="res://resources/graphics/Plants/Peashooter/Peashooter_0.png" id="1_gpfoi"]
+[ext_resource type="Script" path="res://script/plants/peashooter.gd" id="1_qqexd"]
 [ext_resource type="Texture2D" uid="uid://d1cft4mvtpgbt" path="res://resources/graphics/Plants/Peashooter/Peashooter_1.png" id="2_7v61s"]
 [ext_resource type="Texture2D" uid="uid://c0gkl01238tgk" path="res://resources/graphics/Plants/Peashooter/Peashooter_2.png" id="3_xavce"]
 [ext_resource type="Texture2D" uid="uid://c8nw4rnji2nhr" path="res://resources/graphics/Plants/Peashooter/Peashooter_3.png" id="4_dnxe8"]
@@ -65,6 +66,7 @@ animations = [{
 }]
 
 [node name="peashooter" type="Area2D"]
+script = ExtResource("1_qqexd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-100, 255)
@@ -72,5 +74,7 @@ shape = SubResource("CircleShape2D_rjoyw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-95, 259)
+scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_xvtpa")
-frame_progress = 0.799108
+autoplay = "default"
+frame_progress = 0.550245

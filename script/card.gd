@@ -9,8 +9,6 @@ var board_index
 var plant_scene:PackedScene
 # 是否正在放置植物
 var is_finding = false
-# 现在控制的植物
-var plant
 # 种植需要耗费的阳光
 var value
 # CD时间
@@ -19,9 +17,13 @@ var CDtime
 var canplant = true
 # 植物虚影场景
 var virtual_plant_scene = preload("res://scene/plants/virtualplant.tscn")
-# 植物虚影
-var virtual_plant
+# 放置在草坪上的植物虚影
+var virtual_plant_pack
 
+func cancel_virtual_plants_pack():
+	virtual_plant_pack.pack = false
+	virtual_plant_pack.hide()
+	
 func init(card_image_path, plants_scene, sunvalue, CDtime_, respath, image_num):
 	scale.x = 0.8
 	scale.y = 0.8
@@ -30,14 +32,26 @@ func init(card_image_path, plants_scene, sunvalue, CDtime_, respath, image_num):
 	value = sunvalue
 	CDtime = CDtime_
 	$CD.wait_time = CDtime_
-	virtual_plant = virtual_plant_scene.instantiate()
-	virtual_plant.init(respath, image_num)
-	add_child(virtual_plant)
-
+	virtual_plant_pack = virtual_plant_scene.instantiate()
+	virtual_plant_pack.init(respath, image_num)
+	add_child(virtual_plant_pack)
+	virtual_plant_pack.connect("plant_myself", plant_myself)
+	
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	add_to_group("plants_card")
 
+func plant_myself():
+	canplant = false
+	PlantsBarAutoload.is_planting = false
+	cancel_virtual_plants_pack()
+	$CD.start()
+	var pos = get_viewport().get_mouse_position()
+	var tmp = PlantsBarAutoload.turn_pos_to_grass(pos.x, pos.y)
+	var plant = plant_scene.instantiate()
+	add_child(plant)
+	plant.init(PlantsBarAutoload.grassx[tmp[0]], PlantsBarAutoload.grassy[tmp[1]])
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
@@ -48,32 +62,31 @@ func move_up(delta, speed):
 	p = p.normalized() * speed
 	position += p * delta
 
-func starttimer():
-	$CD.start()
-
 # 记录当前坐标	
 func set_pos():
 	on_board_pos = position
 	
-func try_to_free():
+func start_to_fight():
 	# 如果未使用，删除自身
 	if not has_chosen:
-		virtual_plant.del()
+		virtual_plant_pack.del()
 		queue_free()
+	else:
+		$CD.start()
 
 func _on_pressed():
 	if PlantsBarAutoload.startfight:
+		if not canplant:
+			return
 		if is_finding:
 			# 取消生成
 			is_finding = false
-			virtual_plant.follow = false
-			virtual_plant.hide()
 			PlantsBarAutoload.is_planting = false
 		elif not PlantsBarAutoload.is_planting:
 			# 生成植物
 			is_finding = true
-			virtual_plant.follow = true
-			virtual_plant.show()
+			virtual_plant_pack.pack = true
+			virtual_plant_pack.show()
 			PlantsBarAutoload.is_planting = true
 		return
 	if has_chosen:

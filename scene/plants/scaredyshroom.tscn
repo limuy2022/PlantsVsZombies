@@ -1,5 +1,6 @@
-[gd_scene load_steps=20 format=3 uid="uid://bk1tfjh5pl3qd"]
+[gd_scene load_steps=21 format=3 uid="uid://bk1tfjh5pl3qd"]
 
+[ext_resource type="Script" path="res://script/plants/scaredyshroom.gd" id="1_1armh"]
 [ext_resource type="Texture2D" uid="uid://bj20a8nogy3ys" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_0.png" id="1_bfkc3"]
 [ext_resource type="Texture2D" uid="uid://besa46q13lil8" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_1.png" id="2_q5rdt"]
 [ext_resource type="Texture2D" uid="uid://cbqsj5vrx7f7v" path="res://resources/graphics/Plants/ScaredyShroom/ScaredyShroom/ScaredyShroom_2.png" id="3_eicge"]
@@ -82,9 +83,12 @@ radius = 25.0
 height = 74.0
 
 [node name="scaredyshroom" type="Area2D"]
+script = ExtResource("1_1armh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_75srr")
+autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_g0pyh")

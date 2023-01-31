@@ -1,5 +1,6 @@
-[gd_scene load_steps=18 format=3 uid="uid://p7fw2dkexeh0"]
+[gd_scene load_steps=19 format=3 uid="uid://p7fw2dkexeh0"]
 
+[ext_resource type="Script" path="res://script/plants/snowpea.gd" id="1_4dirq"]
 [ext_resource type="Texture2D" uid="uid://p81nogamdg1i" path="res://resources/graphics/Plants/SnowPea/SnowPea_0.png" id="1_dilld"]
 [ext_resource type="Texture2D" uid="uid://c3hqud5qp3lem" path="res://resources/graphics/Plants/SnowPea/SnowPea_1.png" id="2_7e1q1"]
 [ext_resource type="Texture2D" uid="uid://c2n2v7oorxn73" path="res://resources/graphics/Plants/SnowPea/SnowPea_2.png" id="3_lyavn"]
@@ -73,9 +74,12 @@ animations = [{
 radius = 38.0132
 
 [node name="snowpea" type="Area2D"]
+script = ExtResource("1_4dirq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_q46vg")
+autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_pub8c")

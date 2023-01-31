@@ -91,6 +91,7 @@ radius = 12.9661
 height = 84.061
 
 [node name="spikeweed" type="Area2D"]
+position = Vector2(0, 94)
 script = ExtResource("1_0puo5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

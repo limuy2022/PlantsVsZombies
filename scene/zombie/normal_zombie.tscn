@@ -1,0 +1,113 @@
+[gd_scene load_steps=25 format=3 uid="uid://s3qc322pk8h2"]
+
+[ext_resource type="Texture2D" uid="uid://dr785q142b472" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_0.png" id="1_ksdfs"]
+[ext_resource type="Texture2D" uid="uid://cc8yvn7ecswer" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_1.png" id="2_d64bh"]
+[ext_resource type="Texture2D" uid="uid://djb2btjawyii3" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_2.png" id="3_lek5t"]
+[ext_resource type="Texture2D" uid="uid://dvl07mefajau2" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_3.png" id="4_ihxq1"]
+[ext_resource type="Texture2D" uid="uid://csfutxoni6mad" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_4.png" id="5_t7r6i"]
+[ext_resource type="Texture2D" uid="uid://cvu1t1kn7fr8s" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_5.png" id="6_qff2m"]
+[ext_resource type="Texture2D" uid="uid://d0ubdpc6y1x1h" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_6.png" id="7_yi3gm"]
+[ext_resource type="Texture2D" uid="uid://c5w6gupfr25bn" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_7.png" id="8_vjkbw"]
+[ext_resource type="Texture2D" uid="uid://cl8thonq0bovv" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_8.png" id="9_ko7dg"]
+[ext_resource type="Texture2D" uid="uid://8nh0rdhl8jdb" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_9.png" id="10_jppui"]
+[ext_resource type="Texture2D" uid="uid://cwwwl1jlmejw0" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_10.png" id="11_h2w00"]
+[ext_resource type="Texture2D" uid="uid://dix0rdbdex6yt" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_11.png" id="12_5iqij"]
+[ext_resource type="Texture2D" uid="uid://doyn1xaln1v65" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_12.png" id="13_v65dh"]
+[ext_resource type="Texture2D" uid="uid://dd4o3ba2hk4v4" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_13.png" id="14_5bpi1"]
+[ext_resource type="Texture2D" uid="uid://cw6dbypfjndnm" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_14.png" id="15_otn7v"]
+[ext_resource type="Texture2D" uid="uid://6fhitec2cug4" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_15.png" id="16_6lcag"]
+[ext_resource type="Texture2D" uid="uid://cb72moiyirqkm" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_16.png" id="17_44b5d"]
+[ext_resource type="Texture2D" uid="uid://dd8062cekr5im" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_17.png" id="18_vgl74"]
+[ext_resource type="Texture2D" uid="uid://dnys1n4evooo8" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_18.png" id="19_bwf2k"]
+[ext_resource type="Texture2D" uid="uid://bxlvphnj2a4f1" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_19.png" id="20_03n6y"]
+[ext_resource type="Texture2D" uid="uid://bivfsc3pi1gjr" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_20.png" id="21_p32rf"]
+[ext_resource type="Texture2D" uid="uid://dnfg8tqhso647" path="res://resources/graphics/Zombies/NormalZombie/Zombie/Zombie_21.png" id="22_s7o1i"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_psm04"]
+radius = 37.0
+height = 114.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_trlxs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ksdfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_d64bh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lek5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ihxq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_t7r6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qff2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_yi3gm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vjkbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ko7dg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jppui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_h2w00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5iqij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_v65dh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_5bpi1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_otn7v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_6lcag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_44b5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_vgl74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_bwf2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_03n6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_p32rf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_s7o1i")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="normal_zombie" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(21, 13)
+shape = SubResource("CapsuleShape2D_psm04")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_trlxs")
+animation = &"walk"
+autoplay = "walk"

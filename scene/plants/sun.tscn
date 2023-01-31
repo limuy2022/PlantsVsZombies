@@ -1,5 +1,6 @@
-[gd_scene load_steps=25 format=3 uid="uid://y3ylln7i2sqn"]
+[gd_scene load_steps=26 format=3 uid="uid://y3ylln7i2sqn"]
 
+[ext_resource type="Script" path="res://script/plants/sun.gd" id="1_4b4c1"]
 [ext_resource type="Texture2D" uid="uid://bsr8s2afjg5k6" path="res://resources/graphics/Plants/Sun/Sun_0.png" id="1_lyo1b"]
 [ext_resource type="Texture2D" uid="uid://budu5p4443fgy" path="res://resources/graphics/Plants/Sun/Sun_1.png" id="2_ut2pf"]
 [ext_resource type="Texture2D" uid="uid://csufukfrogc3m" path="res://resources/graphics/Plants/Sun/Sun_2.png" id="3_mt6aj"]
@@ -23,7 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://cmnrna6caysa1" path="res://resources/graphics/Plants/Sun/Sun_20.png" id="21_3qo8e"]
 [ext_resource type="Texture2D" uid="uid://c0hktbhg0l6bw" path="res://resources/graphics/Plants/Sun/Sun_21.png" id="22_ephao"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_13y27"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_vkage"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -97,14 +98,24 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_05yij"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_xhqqn"]
 radius = 39.0512
 
 [node name="sun" type="Area2D"]
+script = ExtResource("1_4b4c1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_13y27")
+sprite_frames = SubResource("SpriteFrames_vkage")
+autoplay = "default"
 frame_progress = 0.0554553
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_05yij")
+shape = SubResource("CircleShape2D_xhqqn")
+
+[node name="disappeartimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+autostart = true
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="timeout" from="disappeartimer" to="." method="_on_disappeartimer_timeout"]

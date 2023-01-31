@@ -17,5 +17,5 @@ func _on_pressed():
 	hide()
 	PlantsBarAutoload.startfight = true
 	$"../plants_menu".hide()
-	$"../sumtimer".start()
+	$"../suntimer".start()
 	get_tree().call_group("plants_card", "start_to_fight")

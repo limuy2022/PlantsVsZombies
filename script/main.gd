@@ -15,6 +15,7 @@ const card_pos = [
 ]
 
 var card = preload("res://scene/card.tscn")
+var sun_scene = preload("res://scene/plants/sun.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -36,4 +37,7 @@ func _process(delta):
 
 
 func _on_sumtimer_timeout():
-	pass # Replace with function body.
+	$suntimer.wait_time = randi_range(7, 10)
+	var sun = sun_scene.instantiate()
+	add_child(sun)
+	sun.init_sky()

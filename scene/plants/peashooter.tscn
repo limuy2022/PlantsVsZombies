@@ -62,7 +62,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 6.0
+"speed": 8.0
 }]
 
 [node name="peashooter" type="Area2D"]

@@ -13,3 +13,7 @@ func init(x, y):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_sleeptimer_timeout():
+	$AnimatedSprite2D.play("can_be_used")

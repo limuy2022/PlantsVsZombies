@@ -42,12 +42,15 @@ func _ready():
 	add_to_group("plants_card")
 
 func plant_myself():
+	var pos = get_viewport().get_mouse_position()
+	var tmp = PlantsBarAutoload.turn_pos_to_grass(pos.x, pos.y)
 	canplant = false
 	PlantsBarAutoload.is_planting = false
 	cancel_virtual_plants_pack()
+	PlantsBarAutoload.sun -= value
+	PlantsBarAutoload.has_planted_num += 1
 	$CD.start()
-	var pos = get_viewport().get_mouse_position()
-	var tmp = PlantsBarAutoload.turn_pos_to_grass(pos.x, pos.y)
+	PlantsBarAutoload.has_planted[tmp[0]][tmp[1]] = true
 	var plant = plant_scene.instantiate()
 	add_child(plant)
 	plant.init(PlantsBarAutoload.grassx[tmp[0]], PlantsBarAutoload.grassy[tmp[1]])
@@ -76,7 +79,7 @@ func start_to_fight():
 
 func _on_pressed():
 	if PlantsBarAutoload.startfight:
-		if not canplant:
+		if not canplant or PlantsBarAutoload.sun < value or PlantsBarAutoload.has_planted_num == PlantsBarAutoload.max_planted:
 			return
 		if is_finding:
 			# 取消生成

@@ -13,6 +13,7 @@ func init(path, numend):
 	for i in range(numend):
 		sprite_frames_local.add_frame("default", load(path % i))
 	hide()
+	sprite_frames_local.set_animation_speed("default", 8)
 	$"AnimatedSprite2D".sprite_frames = sprite_frames_local
 	$"AnimatedSprite2D".autoplay = "default"
 

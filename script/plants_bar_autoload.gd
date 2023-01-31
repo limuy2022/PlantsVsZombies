@@ -15,13 +15,27 @@ var startfight = false
 # 每一列僵尸的数量
 var zombie_number = [0, 0, 0, 0, 0]
 # 当前阳光数
-var sun = 0
+var sun = 100
+# 一朵阳光添加的阳光数
+var sun_add_once = 50
 # Y轴坐标
 var grassy = [120, 220, 320, 420, 520]
 # X轴坐标
 var grassx = [300, 380, 460, 540, 620, 700, 780, 860, 940]
 # 是否当前有植物正准备种植
 var is_planting = false
+# 标记是否种植
+var has_planted:Array
+# 标记种植数量
+var has_planted_num = 0
+# 最大种植数量
+const max_planted = 45
+
+func _ready():
+	for i in range(9):
+		has_planted.append([])
+		for j in range(5):
+			has_planted[i].append(false)
 
 func add():
 	for i in range(0, maxnum):
@@ -43,6 +57,8 @@ func turn_pos_to_grass(xinput, yinput):
 			xmin = tmp
 			x = i
 	for i in range(0, len(PlantsBarAutoload.grassy)):
+		if has_planted[x][i]:
+			continue
 		var tmp = abs(yinput - PlantsBarAutoload.grassy[i])
 		if tmp < ymin:
 			ymin = tmp

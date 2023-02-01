@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c2qhxbeaol6fs"
-path="res://.godot/imported/groan2.ogg-0ecd3378f467cd5b1453fdaec7238b3c.oggvorbisstr"
+path="res://.godot/imported/groan2.ogg-bf63ab13df1a2a4998eb39d6304dda22.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/groan2.ogg"
-dest_files=["res://.godot/imported/groan2.ogg-0ecd3378f467cd5b1453fdaec7238b3c.oggvorbisstr"]
+source_file="res://resources/Music/groan2.ogg"
+dest_files=["res://.godot/imported/groan2.ogg-bf63ab13df1a2a4998eb39d6304dda22.oggvorbisstr"]
 
 [params]
 

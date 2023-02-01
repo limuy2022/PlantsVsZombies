@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dry0q7ewmkv0"
-path="res://.godot/imported/potato_mine.ogg-3106cde9b372b94d7135f6d0b8dee384.oggvorbisstr"
+path="res://.godot/imported/potato_mine.ogg-3c3816ed8b52667cc44490798b1efc8e.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/potato_mine.ogg"
-dest_files=["res://.godot/imported/potato_mine.ogg-3106cde9b372b94d7135f6d0b8dee384.oggvorbisstr"]
+source_file="res://resources/Music/potato_mine.ogg"
+dest_files=["res://.godot/imported/potato_mine.ogg-3c3816ed8b52667cc44490798b1efc8e.oggvorbisstr"]
 
 [params]
 

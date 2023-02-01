@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://blndpt4tx2waj"
-path="res://.godot/imported/seedlift.ogg-e7f470b70334e6d268b55bb7a068a9ce.oggvorbisstr"
+path="res://.godot/imported/seedlift.ogg-d4f137c12f48983c7e51eb751811b816.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/seedlift.ogg"
-dest_files=["res://.godot/imported/seedlift.ogg-e7f470b70334e6d268b55bb7a068a9ce.oggvorbisstr"]
+source_file="res://resources/Music/seedlift.ogg"
+dest_files=["res://.godot/imported/seedlift.ogg-d4f137c12f48983c7e51eb751811b816.oggvorbisstr"]
 
 [params]
 

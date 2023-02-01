@@ -7,8 +7,10 @@ func _ready():
 
 func init(x, y):
 	basicinit()
-	$AnimatedSprite2D.global_position.x = x
-	$AnimatedSprite2D.global_position.y = y
+	$AnimatedSprite2D.global_position.x = PlantsBarAutoload.grassx[x]
+	$AnimatedSprite2D.global_position.y = PlantsBarAutoload.grassy[y]
+	xpos = x
+	ypos = y
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

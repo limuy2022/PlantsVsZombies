@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://cm8hq37agaih4"
-path="res://.godot/imported/prohibit.ogg-1becbd427a24f69be5c9e1e25bff796e.oggvorbisstr"
+path="res://.godot/imported/prohibit.ogg-914bdd62c1895f9c2b2b856fc9f87e18.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/prohibit.ogg"
-dest_files=["res://.godot/imported/prohibit.ogg-1becbd427a24f69be5c9e1e25bff796e.oggvorbisstr"]
+source_file="res://resources/Music/prohibit.ogg"
+dest_files=["res://.godot/imported/prohibit.ogg-914bdd62c1895f9c2b2b856fc9f87e18.oggvorbisstr"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b15k5v2peoeb3"
-path="res://.godot/imported/gravebutton.ogg-ed0e789d394d49a546f7f73cc7cdeff1.oggvorbisstr"
+path="res://.godot/imported/gravebutton.ogg-3eac00ddcf526c89f76bb86c969969eb.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/gravebutton.ogg"
-dest_files=["res://.godot/imported/gravebutton.ogg-ed0e789d394d49a546f7f73cc7cdeff1.oggvorbisstr"]
+source_file="res://resources/Music/gravebutton.ogg"
+dest_files=["res://.godot/imported/gravebutton.ogg-3eac00ddcf526c89f76bb86c969969eb.oggvorbisstr"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b8h0am7v7dhpt"
-path="res://.godot/imported/dirt_rise.ogg-4b9e6ad9d699b69ffd04c66edcd50721.oggvorbisstr"
+path="res://.godot/imported/dirt_rise.ogg-bce74fcda11750b5e1a7278f2a19a522.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/dirt_rise.ogg"
-dest_files=["res://.godot/imported/dirt_rise.ogg-4b9e6ad9d699b69ffd04c66edcd50721.oggvorbisstr"]
+source_file="res://resources/Music/dirt_rise.ogg"
+dest_files=["res://.godot/imported/dirt_rise.ogg-bce74fcda11750b5e1a7278f2a19a522.oggvorbisstr"]
 
 [params]
 

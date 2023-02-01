@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://p265r3jrglgy"
-path="res://.godot/imported/swing.ogg-fc84928fe2610ce5ab36d2cecf0b4ce5.oggvorbisstr"
+path="res://.godot/imported/swing.ogg-34e62635c980584bb7a6a13bf2cab6d2.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/swing.ogg"
-dest_files=["res://.godot/imported/swing.ogg-fc84928fe2610ce5ab36d2cecf0b4ce5.oggvorbisstr"]
+source_file="res://resources/Music/swing.ogg"
+dest_files=["res://.godot/imported/swing.ogg-34e62635c980584bb7a6a13bf2cab6d2.oggvorbisstr"]
 
 [params]
 

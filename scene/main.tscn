@@ -49,5 +49,9 @@ script = ExtResource("15_8576h")
 [node name="suntimer" type="Timer" parent="."]
 wait_time = 3.0
 
+[node name="zombie_timer" type="Timer" parent="."]
+wait_time = 10.0
+
 [connection signal="pressed" from="start_fight" to="start_fight" method="_on_pressed"]
 [connection signal="timeout" from="suntimer" to="." method="_on_sumtimer_timeout"]
+[connection signal="timeout" from="zombie_timer" to="." method="_on_zombie_timer_timeout"]

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://c1v1yq8gekxkl"
-path="res://.godot/imported/ZombiesWinEggs.ogg-4bd153f0b3b61dd2dcfdd83b20bec3d9.oggvorbisstr"
+path="res://.godot/imported/ZombiesWinEggs.ogg-39398e07ede5b3f51e465e017b602411.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/ZombiesWinEggs.ogg"
-dest_files=["res://.godot/imported/ZombiesWinEggs.ogg-4bd153f0b3b61dd2dcfdd83b20bec3d9.oggvorbisstr"]
+source_file="res://resources/Music/ZombiesWinEggs.ogg"
+dest_files=["res://.godot/imported/ZombiesWinEggs.ogg-39398e07ede5b3f51e465e017b602411.oggvorbisstr"]
 
 [params]
 

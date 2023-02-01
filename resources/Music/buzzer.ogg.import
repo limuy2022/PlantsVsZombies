@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://j5kk5covpdfm"
-path="res://.godot/imported/buzzer.ogg-3ac53017ee731cef8273a424805729c1.oggvorbisstr"
+path="res://.godot/imported/buzzer.ogg-3709f94460416b68d041b53a9b76b50a.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/buzzer.ogg"
-dest_files=["res://.godot/imported/buzzer.ogg-3ac53017ee731cef8273a424805729c1.oggvorbisstr"]
+source_file="res://resources/Music/buzzer.ogg"
+dest_files=["res://.godot/imported/buzzer.ogg-3709f94460416b68d041b53a9b76b50a.oggvorbisstr"]
 
 [params]
 

@@ -24,7 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://cmnrna6caysa1" path="res://resources/graphics/Plants/Sun/Sun_20.png" id="21_3qo8e"]
 [ext_resource type="Texture2D" uid="uid://c0hktbhg0l6bw" path="res://resources/graphics/Plants/Sun/Sun_21.png" id="22_ephao"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_vkage"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_ic6v2"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -98,19 +98,21 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_xhqqn"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_yypgb"]
 radius = 39.0512
 
 [node name="sun" type="Area2D"]
+collision_layer = 4
+collision_mask = 0
 script = ExtResource("1_4b4c1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_vkage")
+sprite_frames = SubResource("SpriteFrames_ic6v2")
 autoplay = "default"
 frame_progress = 0.0554553
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_xhqqn")
+shape = SubResource("CircleShape2D_yypgb")
 
 [node name="disappeartimer" type="Timer" parent="."]
 wait_time = 10.0

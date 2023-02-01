@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cuthvnfvc2ffv"]
+
+[ext_resource type="Texture2D" uid="uid://bw35umcadd66x" path="res://resources/graphics/Screen/car.png" id="1_0o8vi"]
+[ext_resource type="Script" path="res://script/minecart.gd" id="1_xopjm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gujb7"]
+radius = 39.0128
+
+[node name="Minecart" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_xopjm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gujb7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0o8vi")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

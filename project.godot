@@ -22,3 +22,9 @@ PlantsBarAutoload="*res://script/plants_bar_autoload.gd"
 [display]
 
 window/size/viewport_height=600
+
+[layer_names]
+
+2d_physics/layer_1="plants"
+2d_physics/layer_2="zombies"
+2d_physics/layer_3="other"

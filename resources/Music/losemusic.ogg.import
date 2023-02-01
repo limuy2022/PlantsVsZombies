@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://3qs4lokk6enm"
-path="res://.godot/imported/losemusic.ogg-423b5438ba58703df001ab095c73b068.oggvorbisstr"
+path="res://.godot/imported/losemusic.ogg-54b7063fcf856524839e13181e5d198e.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/losemusic.ogg"
-dest_files=["res://.godot/imported/losemusic.ogg-423b5438ba58703df001ab095c73b068.oggvorbisstr"]
+source_file="res://resources/Music/losemusic.ogg"
+dest_files=["res://.godot/imported/losemusic.ogg-54b7063fcf856524839e13181e5d198e.oggvorbisstr"]
 
 [params]
 

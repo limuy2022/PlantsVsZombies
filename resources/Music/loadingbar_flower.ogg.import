@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b1ymqfxu3mktd"
-path="res://.godot/imported/loadingbar_flower.ogg-9b5b4f907b8173d3d0638f69fc33243a.oggvorbisstr"
+path="res://.godot/imported/loadingbar_flower.ogg-ba1e6943fb64c98fb62de53bccb09bbf.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/loadingbar_flower.ogg"
-dest_files=["res://.godot/imported/loadingbar_flower.ogg-9b5b4f907b8173d3d0638f69fc33243a.oggvorbisstr"]
+source_file="res://resources/Music/loadingbar_flower.ogg"
+dest_files=["res://.godot/imported/loadingbar_flower.ogg-ba1e6943fb64c98fb62de53bccb09bbf.oggvorbisstr"]
 
 [params]
 

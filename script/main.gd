@@ -4,8 +4,8 @@ var stage_num
 	
 # x坐标，y坐标，卡片图标，对应的植物场景，需要消耗的阳光,cd，[植物图片,图片张数]
 const card_pos = [
-	[24,645, "card_peashooter.png", "peashooter.tscn", 100, 5, ["Peashooter/Peashooter_%s.png",13]],
-	[81,645, "card_sunflower.png", "sunflower.tscn", 50, 5,["SunFlower/SunFlower_%s.png", 18]],
+	[24,645, "card_peashooter.png", "peashooter.tscn", 100, 1, ["Peashooter/Peashooter_%s.png",13]],
+	[81,645, "card_sunflower.png", "sunflower.tscn", 50, 3,["SunFlower/SunFlower_%s.png", 18]],
 	[136,645, "card_puffshroom.png", "puffshroom.tscn", 0, 7,["PuffShroom/PuffShroom/PuffShroom_%s.png", 14]],
 	[191,645, "card_repeaterpea.png", "repeaterpea.tscn", 200, 6, ["RepeaterPea/RepeaterPea_%s.png", 15]],
 	[246, 645, "card_spikeweed.png", "spikeweed.tscn", 100, 6, ["Spikeweed/Spikeweed/Spikeweed_%s.png", 19]],
@@ -16,6 +16,7 @@ const card_pos = [
 
 var card = preload("res://scene/card.tscn")
 var sun_scene = preload("res://scene/plants/sun.tscn")
+var zombie_scene = [preload("res://scene/zombie/normal_zombie.tscn")]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -30,14 +31,16 @@ func _ready():
 		card_obj.position.x = i[0]
 		card_obj.position.y = i[1]
 		add_child(card_obj)
-	
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
 
 func _on_sumtimer_timeout():
 	$suntimer.wait_time = randi_range(7, 10)
 	var sun = sun_scene.instantiate()
 	add_child(sun)
 	sun.init_sky()
+
+
+func _on_zombie_timer_timeout():
+	$zombie_timer.wait_time = randi_range(3, 6)
+	var zombie = zombie_scene[randi() % zombie_scene.size()].instantiate()
+	add_child(zombie)
+	zombie.init()

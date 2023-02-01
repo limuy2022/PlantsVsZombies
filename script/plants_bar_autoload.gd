@@ -15,7 +15,7 @@ var startfight = false
 # 每一列僵尸的数量
 var zombie_number = [0, 0, 0, 0, 0]
 # 当前阳光数
-var sun = 100
+var sun = 1000
 # 一朵阳光添加的阳光数
 var sun_add_once = 50
 # Y轴坐标
@@ -57,8 +57,6 @@ func turn_pos_to_grass(xinput, yinput):
 			xmin = tmp
 			x = i
 	for i in range(0, len(PlantsBarAutoload.grassy)):
-		if has_planted[x][i]:
-			continue
 		var tmp = abs(yinput - PlantsBarAutoload.grassy[i])
 		if tmp < ymin:
 			ymin = tmp

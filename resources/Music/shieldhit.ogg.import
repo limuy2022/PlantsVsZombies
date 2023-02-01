@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dytg4rb101qby"
-path="res://.godot/imported/shieldhit.ogg-fedce69b231bee1dc5000f575ab2e8cb.oggvorbisstr"
+path="res://.godot/imported/shieldhit.ogg-11452963cf23369875872348b953dfcc.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/shieldhit.ogg"
-dest_files=["res://.godot/imported/shieldhit.ogg-fedce69b231bee1dc5000f575ab2e8cb.oggvorbisstr"]
+source_file="res://resources/Music/shieldhit.ogg"
+dest_files=["res://.godot/imported/shieldhit.ogg-11452963cf23369875872348b953dfcc.oggvorbisstr"]
 
 [params]
 

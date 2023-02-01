@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://ce1d8q7y6khcl"
-path="res://.godot/imported/kernelpult.ogg-f2b1f96b15391f337a1b493504b61acf.oggvorbisstr"
+path="res://.godot/imported/kernelpult.ogg-be031695d5e01bdf56dee81099fbba9f.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/kernelpult.ogg"
-dest_files=["res://.godot/imported/kernelpult.ogg-f2b1f96b15391f337a1b493504b61acf.oggvorbisstr"]
+source_file="res://resources/Music/kernelpult.ogg"
+dest_files=["res://.godot/imported/kernelpult.ogg-be031695d5e01bdf56dee81099fbba9f.oggvorbisstr"]
 
 [params]
 

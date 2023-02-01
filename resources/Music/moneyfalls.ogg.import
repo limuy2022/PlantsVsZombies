@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://bs0mtqaq5av2v"
-path="res://.godot/imported/moneyfalls.ogg-46aba08032c46bdfce45244156360a2c.oggvorbisstr"
+path="res://.godot/imported/moneyfalls.ogg-580ed6b53812e6fdaade3650d582a0e3.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/moneyfalls.ogg"
-dest_files=["res://.godot/imported/moneyfalls.ogg-46aba08032c46bdfce45244156360a2c.oggvorbisstr"]
+source_file="res://resources/Music/moneyfalls.ogg"
+dest_files=["res://.godot/imported/moneyfalls.ogg-580ed6b53812e6fdaade3650d582a0e3.oggvorbisstr"]
 
 [params]
 

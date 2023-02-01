@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://b6pmeebkqqavl"
-path="res://.godot/imported/finalwave.ogg-ed9a3f87da2459fea5b89f51f1d4b24f.oggvorbisstr"
+path="res://.godot/imported/finalwave.ogg-16d9ea3fbf4aba62202c73040b1ab46f.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/finalwave.ogg"
-dest_files=["res://.godot/imported/finalwave.ogg-ed9a3f87da2459fea5b89f51f1d4b24f.oggvorbisstr"]
+source_file="res://resources/Music/finalwave.ogg"
+dest_files=["res://.godot/imported/finalwave.ogg-16d9ea3fbf4aba62202c73040b1ab46f.oggvorbisstr"]
 
 [params]
 

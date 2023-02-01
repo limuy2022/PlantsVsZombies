@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://d16jbw8sibxei"
-path="res://.godot/imported/wakeup.ogg-15c122d6b0f5b1c539868ef5468b51c7.oggvorbisstr"
+path="res://.godot/imported/wakeup.ogg-24c36ff7bb25b52c604e2c203ad44bdd.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/wakeup.ogg"
-dest_files=["res://.godot/imported/wakeup.ogg-15c122d6b0f5b1c539868ef5468b51c7.oggvorbisstr"]
+source_file="res://resources/Music/wakeup.ogg"
+dest_files=["res://.godot/imported/wakeup.ogg-24c36ff7bb25b52c604e2c203ad44bdd.oggvorbisstr"]
 
 [params]
 

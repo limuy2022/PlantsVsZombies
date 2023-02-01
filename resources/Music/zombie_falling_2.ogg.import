@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://btvwfnyh0kofb"
-path="res://.godot/imported/zombie_falling_2.ogg-b4b96bd3c0cd4f4dd19d01c7e44110ce.oggvorbisstr"
+path="res://.godot/imported/zombie_falling_2.ogg-5ec13455c2e800d201e3a9388ce4f023.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/zombie_falling_2.ogg"
-dest_files=["res://.godot/imported/zombie_falling_2.ogg-b4b96bd3c0cd4f4dd19d01c7e44110ce.oggvorbisstr"]
+source_file="res://resources/Music/zombie_falling_2.ogg"
+dest_files=["res://.godot/imported/zombie_falling_2.ogg-5ec13455c2e800d201e3a9388ce4f023.oggvorbisstr"]
 
 [params]
 

@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://chhyuacys2r10"
-path="res://.godot/imported/lawnmower.ogg-86cc08911c9b7b1ac4c5bd3909e7d0f3.oggvorbisstr"
+path="res://.godot/imported/lawnmower.ogg-7fb7b06c6e099ffee9851f125e1261ab.oggvorbisstr"
 
 [deps]
 
-source_file="res://resources/资源文件_0619/Music/lawnmower.ogg"
-dest_files=["res://.godot/imported/lawnmower.ogg-86cc08911c9b7b1ac4c5bd3909e7d0f3.oggvorbisstr"]
+source_file="res://resources/Music/lawnmower.ogg"
+dest_files=["res://.godot/imported/lawnmower.ogg-7fb7b06c6e099ffee9851f125e1261ab.oggvorbisstr"]
 
 [params]
 

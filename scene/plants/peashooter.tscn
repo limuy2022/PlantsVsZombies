@@ -78,3 +78,9 @@ scale = Vector2(1.2, 1.2)
 sprite_frames = SubResource("SpriteFrames_xvtpa")
 autoplay = "default"
 frame_progress = 0.550245
+
+[node name="attack_timer" type="Timer" parent="."]
+wait_time = 2.5
+autostart = true
+
+[connection signal="timeout" from="attack_timer" to="." method="_on_attack_timer_timeout"]

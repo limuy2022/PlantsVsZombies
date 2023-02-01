@@ -3,6 +3,7 @@ extends Area2D
 var speed = 20
 var health = 100
 var played = false
+var choose_y
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -10,7 +11,7 @@ func _ready():
 
 func init():
 	global_position.x= 1160
-	var choose_y = randi_range(0, 4)
+	choose_y = randi_range(0, 4)
 	global_position.y = PlantsBarAutoload.grassy[choose_y] - 20
 	PlantsBarAutoload.zombie_number[choose_y] += 1
 
@@ -27,4 +28,5 @@ func _process(delta):
 	position += vel.normalized() * speed * delta
 
 func _on_delete_timer_timeout():
+	PlantsBarAutoload.zombie_number[choose_y] -= 1
 	queue_free()

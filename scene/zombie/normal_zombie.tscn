@@ -75,11 +75,11 @@
 [ext_resource type="Texture2D" uid="uid://dqey5b2yjug5l" path="res://resources/graphics/Zombies/NormalZombie/ZombieDie/ZombieDie_8.png" id="51_ewbmq"]
 [ext_resource type="Texture2D" uid="uid://bbe8fvk47krkb" path="res://resources/graphics/Zombies/NormalZombie/ZombieDie/ZombieDie_9.png" id="52_1ryak"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vs7dd"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_21e7u"]
 radius = 23.1667
 height = 77.3333
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_f885j"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_h2dyj"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -328,10 +328,10 @@ script = ExtResource("1_1iyu1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(21, 13)
-shape = SubResource("CapsuleShape2D_vs7dd")
+shape = SubResource("CapsuleShape2D_21e7u")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_f885j")
+sprite_frames = SubResource("SpriteFrames_h2dyj")
 animation = &"die"
 autoplay = "walk"
 

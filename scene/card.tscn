@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://meqx6qko5xwt"]
+[gd_scene load_steps=4 format=3 uid="uid://meqx6qko5xwt"]
 
+[ext_resource type="Shader" path="res://shader/shadow.gdshader" id="1_6u6ow"]
 [ext_resource type="Script" path="res://script/card.gd" id="1_erycb"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1rb5o"]
+shader = ExtResource("1_6u6ow")
+
 [node name="Card" type="TextureButton"]
+material = SubResource("ShaderMaterial_1rb5o")
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_erycb")

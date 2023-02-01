@@ -54,6 +54,7 @@ func init(card_image_path, plants_scene, sunvalue, CDtime_, respath, image_num):
 	virtual_plant_pack.connect("plant_myself", plant_myself)
 
 func plant_myself():
+	is_finding = false
 	var pos = get_viewport().get_mouse_position()
 	var tmp = PlantsBarAutoload.turn_pos_to_grass(pos.x, pos.y)
 	canplant = false

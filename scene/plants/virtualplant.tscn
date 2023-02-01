@@ -1,21 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://bt7wk4rnj1fgr"]
+[gd_scene load_steps=3 format=3 uid="uid://bt7wk4rnj1fgr"]
 
 [ext_resource type="Script" path="res://script/plants/virtualplant.gd" id="1_u1mo0"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_xsut3"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_g6fqt"]
 radius = 55.0364
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_pk0xo"]
 
 [node name="virtualplant" type="Area2D"]
 script = ExtResource("1_u1mo0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_xsut3")
+shape = SubResource("CircleShape2D_g6fqt")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-material = SubResource("ShaderMaterial_pk0xo")
-scale = Vector2(1.2, 1.2)
+scale = Vector2(1.4, 1.4)
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]

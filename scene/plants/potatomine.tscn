@@ -67,7 +67,7 @@ radius = 37.4833
 script = ExtResource("1_igkeh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(1.2, 1.2)
+scale = Vector2(1.4, 1.4)
 sprite_frames = SubResource("SpriteFrames_u2d26")
 animation = &"can_be_used"
 autoplay = "init"

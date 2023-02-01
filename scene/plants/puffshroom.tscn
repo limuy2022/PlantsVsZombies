@@ -77,6 +77,6 @@ position = Vector2(-1, 17)
 shape = SubResource("CircleShape2D_lmxjf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(1.2, 1.2)
+scale = Vector2(1.4, 1.4)
 sprite_frames = SubResource("SpriteFrames_iovrv")
 autoplay = "default"

@@ -95,7 +95,7 @@ position = Vector2(0, 94)
 script = ExtResource("1_0puo5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(1.2, 1.2)
+scale = Vector2(1.4, 1.4)
 sprite_frames = SubResource("SpriteFrames_xh5f4")
 autoplay = "default"
 

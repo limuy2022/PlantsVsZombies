@@ -74,6 +74,7 @@ animations = [{
 radius = 36.2215
 
 [node name="repeaterpea" type="Area2D"]
+collision_mask = 2
 script = ExtResource("1_ymqby")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -83,3 +84,13 @@ autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ftj3d")
+
+[node name="attack_timer_1" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="attack_timer_2" type="Timer" parent="."]
+wait_time = 0.2
+
+[connection signal="timeout" from="attack_timer_1" to="." method="_on_attack_timer_timeout"]
+[connection signal="timeout" from="attack_timer_2" to="." method="_on_attack_timer_2_timeout"]

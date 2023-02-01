@@ -88,17 +88,20 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7xpwm"]
 radius = 12.9661
-height = 84.061
+height = 118.015
 
 [node name="spikeweed" type="Area2D"]
-position = Vector2(0, 94)
+position = Vector2(-3, -2)
+collision_mask = 2
 script = ExtResource("1_0puo5")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(6, 45)
 scale = Vector2(1.4, 1.4)
 sprite_frames = SubResource("SpriteFrames_xh5f4")
 autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(10, 51)
 rotation = 1.55977
 shape = SubResource("CapsuleShape2D_7xpwm")

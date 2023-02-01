@@ -64,6 +64,7 @@ animations = [{
 radius = 37.4833
 
 [node name="potatomine" type="Area2D"]
+collision_mask = 2
 script = ExtResource("1_igkeh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

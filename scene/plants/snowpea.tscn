@@ -74,6 +74,7 @@ animations = [{
 radius = 38.0132
 
 [node name="snowpea" type="Area2D"]
+collision_mask = 2
 script = ExtResource("1_4dirq")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

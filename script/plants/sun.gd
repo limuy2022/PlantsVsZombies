@@ -11,7 +11,7 @@ var zf
 
 func function(x):
 	# 二次函数，模拟路径
-	return (x - zf * 6)**2 - 40
+	return ((x - zf * 6)**2) - 40
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

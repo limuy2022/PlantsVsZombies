@@ -3,11 +3,12 @@
 [ext_resource type="Texture2D" uid="uid://bjknvmpexnegx" path="res://resources/graphics/Bullets/PeaNormal/PeaNormal_0.png" id="1_ayr4t"]
 [ext_resource type="Script" path="res://script/plants/bullets/normal_bullet.gd" id="1_j4arp"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_38o3n"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_q8xwb"]
 radius = 12.6491
 
 [node name="normal_bullet" type="Area2D"]
 position = Vector2(-1, 0)
+collision_layer = 8
 collision_mask = 2
 script = ExtResource("1_j4arp")
 
@@ -17,7 +18,7 @@ texture = ExtResource("1_ayr4t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(13, 1)
-shape = SubResource("CircleShape2D_38o3n")
+shape = SubResource("CircleShape2D_q8xwb")
 
 [node name="delete_timer" type="Timer" parent="."]
 

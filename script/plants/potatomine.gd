@@ -7,8 +7,8 @@ func _ready():
 
 func init(x, y):
 	basicinit()
-	$AnimatedSprite2D.global_position.x = PlantsBarAutoload.grassx[x]
-	$AnimatedSprite2D.global_position.y = PlantsBarAutoload.grassy[y]
+	global_position.x = PlantsBarAutoload.grassx[x]
+	global_position.y = PlantsBarAutoload.grassy[y]
 	xpos = x
 	ypos = y
 

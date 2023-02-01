@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxlaqugrxhexd"]
+
+[ext_resource type="Texture2D" uid="uid://btwmj6wh4s6un" path="res://resources/graphics/Screen/ZombiesWon.jpg" id="1_tsg4q"]
+
+[node name="game_failed" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 1
+offset_right = 564.0
+offset_bottom = 468.0
+scale = Vector2(2.04529, 1.27508)
+texture = ExtResource("1_tsg4q")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 572.0
+offset_top = 557.0
+offset_right = 580.0
+offset_bottom = 565.0
+scale = Vector2(8.68357, 3.58766)

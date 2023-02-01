@@ -86,6 +86,7 @@ animations = [{
 radius = 34.1321
 
 [node name="sunflower" type="Area2D"]
+collision_mask = 2
 script = ExtResource("1_0cgy4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

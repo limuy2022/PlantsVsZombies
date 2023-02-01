@@ -2,14 +2,16 @@
 
 [ext_resource type="Script" path="res://script/plants/virtualplant.gd" id="1_u1mo0"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_g6fqt"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_vfdhj"]
 radius = 55.0364
 
 [node name="virtualplant" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
 script = ExtResource("1_u1mo0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_g6fqt")
+shape = SubResource("CircleShape2D_vfdhj")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

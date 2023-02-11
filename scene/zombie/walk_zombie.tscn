@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://p5uy0rof6amo"]
+[gd_scene load_steps=15 format=3 uid="uid://p5uy0rof6amo"]
 
 [ext_resource type="Texture2D" uid="uid://ke1xlsumb3et" path="res://resources/graphics/Zombies/FlagZombie/FlagZombie/FlagZombie_0.png" id="1_ot1a6"]
 [ext_resource type="Texture2D" uid="uid://dcsujd1ek52ns" path="res://resources/graphics/Zombies/FlagZombie/FlagZombie/FlagZombie_1.png" id="2_711ln"]
@@ -12,6 +12,10 @@
 [ext_resource type="Texture2D" uid="uid://lax675n38qld" path="res://resources/graphics/Zombies/FlagZombie/FlagZombie/FlagZombie_9.png" id="10_63i7h"]
 [ext_resource type="Texture2D" uid="uid://orjrin2u00sv" path="res://resources/graphics/Zombies/FlagZombie/FlagZombie/FlagZombie_10.png" id="11_pxu24"]
 [ext_resource type="Texture2D" uid="uid://74mmhuhxxjvc" path="res://resources/graphics/Zombies/FlagZombie/FlagZombie/FlagZombie_11.png" id="12_daq8k"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ebb1q"]
+radius = 36.0
+height = 138.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_h6abc"]
 animations = [{
@@ -60,8 +64,11 @@ animations = [{
 [node name="walk_zombie" type="Area2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 4)
+shape = SubResource("CapsuleShape2D_ebb1q")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-28, 3)
 sprite_frames = SubResource("SpriteFrames_h6abc")
 animation = &"walk"
 autoplay = "walk"

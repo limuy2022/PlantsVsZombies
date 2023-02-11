@@ -2,9 +2,7 @@ extends Area2D
 
 var speed = 20
 var health = 100
-var played = false
 var choose_y
-var walked = true
 # 正在攻击的植物
 var attack_plant
 # 一次攻击值
@@ -20,33 +18,41 @@ func init():
 	global_position.y = PlantsBarAutoload.grassy[choose_y] - 20
 	PlantsBarAutoload.zombie_number[choose_y] += 1
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if health <= 0:
-		if played:
-			return
-		$delete_timer.start()
-		$AnimatedSprite2D.play("die")
-		played = true
-		return
-	if walked:
-		var vel = Vector2(-1, 0)
-		position += vel.normalized() * speed * delta
-
-func _on_delete_timer_timeout():
+func del():
 	PlantsBarAutoload.zombie_number[choose_y] -= 1
 	queue_free()
+
+func walked(delta):
+	var vel = Vector2(-1, 0)
+	position += vel.normalized() * speed * delta
+	
+var process	= walked
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if process == null:
+		return
+	process.call(delta)
+
+func be_attacked(sub):
+	if health <= 0:
+		return
+	health -= sub
+	if health <= 0:
+		$AnimatedSprite2D.play("die")
+		$AnimatedSprite2D.animation_looped.connect(del)
+		process = null
 
 func _on_area_entered(area):
 	if $attack_timer.is_stopped():
 		$attack_timer.start()
 		$AnimatedSprite2D.play("attack")
-		walked = false
+		process = null
 		attack_plant = area
 		
 func _on_area_exited(area):
 	$AnimatedSprite2D.play("walk")
-	walked = true
+	process = walked
 	$attack_timer.stop()
 
 func _on_attack_timer_timeout():

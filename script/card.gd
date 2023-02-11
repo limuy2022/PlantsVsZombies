@@ -51,7 +51,7 @@ func init(card_image_path, plants_scene, sunvalue, CDtime_, respath, image_num):
 	virtual_plant_follow.init(respath, image_num)
 	add_child(virtual_plant_pack)
 	add_child(virtual_plant_follow)
-	virtual_plant_pack.connect("plant_myself", plant_myself)
+	virtual_plant_pack.plant_myself.connect(plant_myself)
 
 func plant_myself():
 	is_finding = false

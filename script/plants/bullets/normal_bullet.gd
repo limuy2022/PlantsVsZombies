@@ -23,7 +23,7 @@ func _on_area_entered(area):
 	$Sprite2D.texture = boom
 	$delete_timer.start()
 	stop = true
-	area.health -= 20
+	area.be_attacked(20)
 
 func _on_delete_timer_timeout():
 	queue_free()

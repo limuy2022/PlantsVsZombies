@@ -1,8 +1,8 @@
 extends Area2D
 
 var speed = 400
-var boom = preload("res://resources/graphics/Bullets/PeaNormalExplode/PeaNormalExplode_0.png")
 var stop = false
+var del = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -20,10 +20,14 @@ func _process(delta):
 	position += vel.normalized() * speed * delta
 
 func _on_area_entered(area):
-	$Sprite2D.texture = boom
-	$delete_timer.start()
+	$AnimatedSprite2D.play("del")
 	stop = true
 	area.be_attacked(20)
 
-func _on_delete_timer_timeout():
-	queue_free()
+func _on_animated_sprite_2d_animation_looped():
+	if $AnimatedSprite2D.animation == "move":
+		return
+	if del:
+		queue_free()
+	$AnimatedSprite2D.play("move")
+	del = true

@@ -1,10 +1,55 @@
-[gd_scene load_steps=4 format=3 uid="uid://1e6pdwgkqcqd"]
+[gd_scene load_steps=11 format=3 uid="uid://1e6pdwgkqcqd"]
 
-[ext_resource type="Texture2D" uid="uid://bjknvmpexnegx" path="res://resources/graphics/Bullets/PeaNormal/PeaNormal_0.png" id="1_ayr4t"]
 [ext_resource type="Script" path="res://script/plants/bullets/normal_bullet.gd" id="1_j4arp"]
+[ext_resource type="Texture2D" uid="uid://dkkdnmjtqhiyl" path="res://resources/graphics/Bullets/PeaNormal/start/1.png" id="2_fahqp"]
+[ext_resource type="Texture2D" uid="uid://d5gg7i2egn2q" path="res://resources/graphics/Bullets/PeaNormal/end/1.png" id="2_wj1ap"]
+[ext_resource type="Texture2D" uid="uid://dyj6j7124ivdb" path="res://resources/graphics/Bullets/PeaNormal/end/2.png" id="3_4cuua"]
+[ext_resource type="Texture2D" uid="uid://7irwsmnqgl34" path="res://resources/graphics/Bullets/PeaNormal/start/2.png" id="3_y8cvk"]
+[ext_resource type="Texture2D" uid="uid://doix11wkrrn3u" path="res://resources/graphics/Bullets/PeaNormal/start/3.png" id="4_020ho"]
+[ext_resource type="Texture2D" uid="uid://bo17w5q4o5kaq" path="res://resources/graphics/Bullets/PeaNormal/end/3.png" id="4_nebkj"]
+[ext_resource type="Texture2D" uid="uid://cgvjx5qxprkox" path="res://resources/graphics/Bullets/PeaNormal/end/4.png" id="5_qcp3w"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yjd6l"]
-radius = 12.6491
+radius = 20.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fjb2h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wj1ap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4cuua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nebkj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qcp3w")
+}],
+"loop": true,
+"name": &"del",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_020ho")
+}],
+"loop": true,
+"name": &"move",
+"speed": 0.01
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fahqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_y8cvk")
+}],
+"loop": true,
+"name": &"start",
+"speed": 10.0
+}]
 
 [node name="normal_bullet" type="Area2D"]
 position = Vector2(-1, 0)
@@ -12,15 +57,14 @@ collision_layer = 8
 collision_mask = 2
 script = ExtResource("1_j4arp")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("1_ayr4t")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(13, 1)
 shape = SubResource("CircleShape2D_yjd6l")
 
-[node name="delete_timer" type="Timer" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2.8, 2.8)
+sprite_frames = SubResource("SpriteFrames_fjb2h")
+animation = &"move"
+autoplay = "start"
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
-[connection signal="timeout" from="delete_timer" to="." method="_on_delete_timer_timeout"]
+[connection signal="animation_looped" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_looped"]

@@ -2,23 +2,23 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjknvmpexnegx"
-path="res://.godot/imported/PeaNormal_0.png-94b368691db06a916628584c77c1b848.ctex"
+uid="uid://cgvjx5qxprkox"
+path="res://.godot/imported/4.png-1215558ae056a8d371836fe11f1058b0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/graphics/Bullets/PeaNormal/PeaNormal_0.png"
-dest_files=["res://.godot/imported/PeaNormal_0.png-94b368691db06a916628584c77c1b848.ctex"]
+source_file="res://resources/graphics/Bullets/PeaNormal/end/4.png"
+dest_files=["res://.godot/imported/4.png-1215558ae056a8d371836fe11f1058b0.ctex"]
 
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

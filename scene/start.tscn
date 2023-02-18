@@ -1,21 +1,40 @@
-[gd_scene load_steps=6 format=3 uid="uid://vma83vm8xme1"]
+[gd_scene load_steps=9 format=3 uid="uid://vma83vm8xme1"]
 
 [ext_resource type="Script" path="res://script/start.gd" id="1_diey2"]
 [ext_resource type="Texture2D" uid="uid://djgugfym6kmxs" path="res://resources/graphics/Screen/MainMenu.png" id="1_hcac3"]
 [ext_resource type="Texture2D" uid="uid://rair8nt8yqyr" path="res://resources/graphics/Screen/Adventure_0.png" id="2_tacmj"]
 [ext_resource type="Texture2D" uid="uid://cyiex88drbapw" path="res://resources/graphics/Screen/Adventure_1.png" id="3_imcx1"]
-[ext_resource type="Script" path="res://script/startgame.gd" id="4_kkjh3"]
+[ext_resource type="FontFile" uid="uid://kj73dfsyfggv" path="res://resources/fonts/DaLiangZiTiKu-1.ttf" id="6_ekou4"]
 
-[node name="Start" type="Node2D"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_owyc4"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3vulg"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qwek3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Start" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_diey2")
 
 [node name="background" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-scale = Vector2(1.28428, 0.997078)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_hcac3")
 
 [node name="startgame" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 633.0
 offset_top = 86.0
 offset_right = 799.0
@@ -23,6 +42,20 @@ offset_bottom = 156.0
 scale = Vector2(2.30264, 2.4808)
 texture_normal = ExtResource("2_tacmj")
 texture_pressed = ExtResource("3_imcx1")
-script = ExtResource("4_kkjh3")
 
-[connection signal="pressed" from="startgame" to="startgame" method="_on_pressed"]
+[node name="about" type="Button" parent="."]
+layout_mode = 0
+offset_left = 834.0
+offset_top = 481.0
+offset_right = 866.0
+offset_bottom = 498.0
+scale = Vector2(2.34909, 2.34909)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_ekou4")
+theme_override_styles/normal = SubResource("StyleBoxFlat_owyc4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3vulg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qwek3")
+text = "关于"
+
+[connection signal="pressed" from="startgame" to="." method="_on_startgame_pressed"]
+[connection signal="pressed" from="about" to="." method="_on_about_pressed"]

@@ -1,0 +1,73 @@
+[gd_scene load_steps=3 format=3 uid="uid://88poyd7nbbn8"]
+
+[ext_resource type="FontFile" uid="uid://b5rpklf8djnhs" path="res://resources/fonts/ShangShouYuRenTi-2.ttf" id="1_jbr7g"]
+[ext_resource type="Script" path="res://script/return.gd" id="2_8yrws"]
+
+[node name="about" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.403922, 0.270588, 0, 1)
+
+[node name="about" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 26
+text = "关于"
+
+[node name="text" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_top = -85.0
+offset_right = 541.0
+offset_bottom = 85.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_jbr7g")
+theme_override_font_sizes/font_size = 22
+text = "  该游戏为植物大战僵尸1代的重制版本，加入了很多不同于原版的成分，还加入了来自死亡细胞的boss战，
+  素材取自死亡细胞和植物大战僵尸年度版，也有部分素材取自网络和自己创作，代码完全开源在https://
+github.com/limuy2022/PlantsVsZombies，欢迎任何人来贡献代码和报告错误！
+  该游戏仅供学习和娱乐使用，不得作为商业用途，如有侵权，立刻删除
+  该项目使用游戏引擎godot进行开发，推荐大家使用。同样的，也推荐大家去玩死亡细胞和植物大战僵尸原版！"
+
+[node name="return" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -27.0
+offset_top = -91.9999
+offset_right = 13.0
+offset_bottom = -60.9999
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1.49325, 1.49325)
+text = "返回"
+script = ExtResource("2_8yrws")
+
+[connection signal="pressed" from="return" to="return" method="_on_pressed"]

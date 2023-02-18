@@ -2,23 +2,23 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy3r4cqwf2ren"
-path="res://.godot/imported/Peashooter_10.png-14ad591920f936f40dbdcd5cdb676ddf.ctex"
+uid="uid://dnch4itb3eatb"
+path="res://.godot/imported/PeaShooter_10.png-c3f9e6985f3906f1794048775757befd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/graphics/Plants/Peashooter/Peashooter_10.png"
-dest_files=["res://.godot/imported/Peashooter_10.png-14ad591920f936f40dbdcd5cdb676ddf.ctex"]
+source_file="res://resources/graphics/Plants/Peashooter/PeaShooter_10.png"
+dest_files=["res://.godot/imported/PeaShooter_10.png-c3f9e6985f3906f1794048775757befd.ctex"]
 
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

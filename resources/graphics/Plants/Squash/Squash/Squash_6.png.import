@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/Squash_6.png-e64a2636c953f2f659d7534d7c1cc1f2
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

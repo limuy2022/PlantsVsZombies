@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/PuffShroomSleep_8.png-6cf43b7583cf4ade0c5f7a4
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

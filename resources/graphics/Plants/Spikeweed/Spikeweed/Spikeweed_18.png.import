@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/Spikeweed_18.png-41f2ac289f1943ddbe20607dcf4a
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

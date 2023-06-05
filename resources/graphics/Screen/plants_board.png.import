@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/plants_board.png-78c0a06ca9ef6ac9e66746990caa
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

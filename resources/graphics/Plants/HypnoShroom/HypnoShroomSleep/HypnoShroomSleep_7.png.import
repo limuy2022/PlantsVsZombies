@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/HypnoShroomSleep_7.png-1d1f4da466688f63966d06
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

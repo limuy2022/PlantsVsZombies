@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/Threepeater_9.png-3f0e4531ed0a55ee5b05593aa9b
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

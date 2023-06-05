@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/Chomper_9.png-a27c7c2de120b77a018e6b92f46123d
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

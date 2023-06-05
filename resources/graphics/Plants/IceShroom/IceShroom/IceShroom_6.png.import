@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/IceShroom_6.png-c8df93b91dbc39427ee5304c613f9
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

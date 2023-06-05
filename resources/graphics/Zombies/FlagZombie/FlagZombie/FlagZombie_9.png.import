@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/FlagZombie_9.png-0063c025e68989d3396275194d27
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

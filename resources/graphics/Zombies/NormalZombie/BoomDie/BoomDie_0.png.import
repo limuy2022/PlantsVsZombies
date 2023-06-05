@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/BoomDie_0.png-da1f934712c1a1f88f33564ad522254
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

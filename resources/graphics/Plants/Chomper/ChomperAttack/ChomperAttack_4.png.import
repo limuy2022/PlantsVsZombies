@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/ChomperAttack_4.png-d52fd584c3aed70d1b523942c
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

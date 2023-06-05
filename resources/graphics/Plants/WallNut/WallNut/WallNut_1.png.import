@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/WallNut_1.png-b35679155d4b7f51a43f96e2cea8b0e
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

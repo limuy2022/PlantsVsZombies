@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/ConeheadZombieAttack_3.png-1b0ee74b02f83a74ba
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

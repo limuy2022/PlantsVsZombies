@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/PuffShroom_3.png-4b1c4cacc5fac074dbcc111fe86b
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/Zombie_18.png-ebb3dd0fe6a25e793b46cf95b3d484b
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

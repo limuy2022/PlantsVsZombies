@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/SunShroom_6.png-0f89c810db77bb3d44334289e6cf5
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

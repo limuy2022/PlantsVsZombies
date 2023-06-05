@@ -16,9 +16,9 @@ dest_files=["res://.godot/imported/SquashAttack_1.png-0a2bf3ed11380d0f30393b6fed
 [params]
 
 compress/mode=0
+compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/bptc_ldr=0
 compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false

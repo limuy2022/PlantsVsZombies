@@ -4,7 +4,7 @@ var stage_num
 	
 # x坐标，y坐标，卡片图标，对应的植物场景，需要消耗的阳光,cd，[植物图片,图片张数]
 const card_pos = [
-	[24,645, "card_peashooter.png", "peashooter.tscn", 100, 1, ["Peashooter/PeaShooter_%s.png",25]],
+	[24,645, "card_peashooter.png", "peashooter.tscn", 100, 1, ["PeaShooter/PeaShooter_%s.png",25]],
 	[81,645, "card_sunflower.png", "sunflower.tscn", 50, 3,["SunFlower/SunFlower_%s.png", 18]],
 	[136,645, "card_puffshroom.png", "puffshroom.tscn", 0, 7,["PuffShroom/PuffShroom/PuffShroom_%s.png", 14]],
 	[191,645, "card_repeaterpea.png", "repeaterpea.tscn", 200, 6, ["RepeaterPea/RepeaterPea_%s.png", 15]],

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbx421exfb584"]
+
+[ext_resource type="Script" path="res://scene/cd_masker.gd" id="1_a7sos"]
+[ext_resource type="Texture2D" uid="uid://dcmggpq0by7dm" path="res://resources/graphics/card_mask.png" id="1_vjax4"]
+
+[node name="CdMasker" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_a7sos")
+
+[node name="mask" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -104.0
+offset_top = -85.0
+offset_right = 96.0
+offset_bottom = 115.0
+texture = ExtResource("1_vjax4")

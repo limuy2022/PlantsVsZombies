@@ -63,6 +63,7 @@ func turn_pos_to_grass(xinput, yinput):
 			y = i
 	return [x, y]
 
+# Cancel the selection
 func cancel(index):
 	used[index] = false
 	choose -= 1

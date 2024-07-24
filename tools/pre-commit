@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# format gdscript
+gdformat .
+# lint gdscript
+gdlint .
+# save
+git add -A

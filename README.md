@@ -1,20 +1,26 @@
 # PlantsVsZombies
 
-由godot引擎制作的植物大战僵尸
-素材来源于植物大战僵尸年度版和死亡细胞
+## [中文](./README-zh.md)
 
-创新植物大战僵尸的玩法，加入死亡细胞的boss战
-准备受到支持的boss：
+A PlantsVsZombies game made by godot engine
+The resources are from the original version of plants vs zombies and the deadcell
+
+I plan to add the boss of deadcells in the game.战
+The bosses ready to be added:
 
 |boss|
 |:---|
-|王后|
-|肿胀眼魔|
+|The Queen|
+|Conjunctivius|
 
-## 玩法
+## Requirement
 
-虽然素材来自植物大战僵尸1，但玩法更接近植物大战僵尸2
+Godot Engine 4.3
 
-## 版本
+## Development Stage
 
-godot 4.3
+Now we are in an early development stage.Developers need to handle multiple projects,so the project will not be updated frequently.But we will not abandon this project!
+
+## Contribution
+
+Please see [Contributing Guide](./CONTRIBUTING.md)

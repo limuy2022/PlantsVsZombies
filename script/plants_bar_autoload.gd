@@ -1,15 +1,17 @@
 extends Node
 
+# 最大卡槽数
+const MAXNUM = 8
+# 卡槽y坐标
+const BAR_Y = 8
+# 最大种植数量
+const MAX_PLANTED = 45
 # 被选中的卡片
 var choose = 0
 # 标记卡槽是否使用
 var used = [false, false, false, false, false, false, false, false]
 # 卡槽坐标
 var pos = [78, 130, 184, 238, 292, 347, 400, 455]
-# 最大卡槽数
-const maxnum = 8
-# 卡槽y坐标
-const bar_y = 8
 # 是否开始战斗
 var startfight = false
 # 每一列僵尸的数量
@@ -25,11 +27,10 @@ var grassx = [300, 380, 460, 540, 620, 700, 780, 860, 940]
 # 是否当前有植物正准备种植
 var is_planting = false
 # 标记是否种植
-var has_planted:Array
+var has_planted: Array
 # 标记种植数量
 var has_planted_num = 0
-# 最大种植数量
-const max_planted = 45
+
 
 func _ready():
 	for i in range(9):
@@ -37,14 +38,16 @@ func _ready():
 		for j in range(5):
 			has_planted[i].append(false)
 
+
 func add():
-	for i in range(0, maxnum):
+	for i in range(0, MAXNUM):
 		if not used[i]:
 			used[i] = true
 			choose += 1
 			return [i, pos[i]]
-	
-# 将自己的坐标转换成草坪上的坐标		
+
+
+# 将自己的坐标转换成草坪上的坐标
 func turn_pos_to_grass(xinput, yinput):
 	# 找到自己最接近哪个区域
 	var x
@@ -62,6 +65,7 @@ func turn_pos_to_grass(xinput, yinput):
 			ymin = tmp
 			y = i
 	return [x, y]
+
 
 # Cancel the selection
 func cancel(index):

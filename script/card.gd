@@ -6,13 +6,13 @@ var on_board_pos
 # 在选择板上的索引
 var board_index
 # 自己对应的植物
-var plant_scene:PackedScene
+var plant_scene: PackedScene
 # 是否正在放置植物
 var is_finding = false
 # 种植需要耗费的阳光
 var value
 # CD时间
-var CDtime
+var cd_time
 # 是否可以种植
 var canplant = true
 # 植物虚影场景
@@ -25,33 +25,37 @@ var virtual_plant_follow
 var virtual_shader_script = preload("res://shader/alpha.gdshader")
 var virtual_shader = ShaderMaterial.new()
 
+
 func _ready():
 	virtual_shader.shader = virtual_shader_script
 	add_to_group("plants_card")
+
 
 func cancel_virtual_plants_pack():
 	virtual_plant_pack.pack = false
 	virtual_plant_pack.hide()
 	virtual_plant_follow.follow = false
 	virtual_plant_follow.hide()
-	
-func init(card_image_path, plants_scene, sunvalue, CDtime_, respath, image_num):
+
+
+func init(card_image_path, plants_scene: PackedScene, sunvalue, cd_time_arg, respath, image_num):
 	scale.x = 0.8
 	scale.y = 0.8
 	texture_normal = load(card_image_path)
-	plant_scene = load(plants_scene)
+	self.plant_scene = plants_scene
 	value = sunvalue
-	CDtime = CDtime_
-	$CD.wait_time = CDtime_
+	cd_time = cd_time_arg
+	$CD.wait_time = cd_time_arg
 	virtual_plant_pack = virtual_plant_scene.instantiate()
 	virtual_plant_pack.init(respath, image_num)
 	virtual_plant_pack.get_node("AnimatedSprite2D").material = virtual_shader
-	
+
 	virtual_plant_follow = virtual_plant_scene.instantiate()
 	virtual_plant_follow.init(respath, image_num)
 	add_child(virtual_plant_pack)
 	add_child(virtual_plant_follow)
 	virtual_plant_pack.plant_myself.connect(plant_myself)
+
 
 func plant_myself():
 	is_finding = false
@@ -68,16 +72,19 @@ func plant_myself():
 	add_child(plant)
 	plant.init(tmp[0], tmp[1])
 
+
 # 向上移动
 func move_up(delta, speed):
 	var p = Vector2(0, -1)
 	p = p.normalized() * speed
 	position += p * delta
 
-# 记录当前坐标	
+
+# 记录当前坐标
 func set_pos():
 	on_board_pos = position
-	
+
+
 func start_to_fight():
 	# 如果未使用，删除自身
 	if not has_chosen:
@@ -88,9 +95,14 @@ func start_to_fight():
 	else:
 		$CD.start()
 
+
 func _on_pressed():
 	if PlantsBarAutoload.startfight:
-		if not canplant or PlantsBarAutoload.sun < value or PlantsBarAutoload.has_planted_num == PlantsBarAutoload.max_planted:
+		if (
+			not canplant
+			or PlantsBarAutoload.sun < value
+			or PlantsBarAutoload.has_planted_num == PlantsBarAutoload.MAX_PLANTED
+		):
 			return
 		if is_finding:
 			# 取消生成
@@ -113,10 +125,10 @@ func _on_pressed():
 		PlantsBarAutoload.cancel(board_index)
 	else:
 		# 选中该植物
-		if PlantsBarAutoload.choose == PlantsBarAutoload.maxnum:
+		if PlantsBarAutoload.choose == PlantsBarAutoload.MAXNUM:
 			return
 		var pos_get = PlantsBarAutoload.add()
-		position.y = PlantsBarAutoload.bar_y
+		position.y = PlantsBarAutoload.BAR_Y
 		position.x = pos_get[1]
 		board_index = pos_get[0]
 		has_chosen = true

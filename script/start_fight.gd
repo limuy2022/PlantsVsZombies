@@ -2,18 +2,21 @@ extends TextureButton
 
 var minecart_scene = preload("res://scene/minecart.tscn")
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if PlantsBarAutoload.startfight:
 		return
-	if PlantsBarAutoload.choose == PlantsBarAutoload.maxnum:
+	if PlantsBarAutoload.choose == PlantsBarAutoload.MAXNUM:
 		show()
 	else:
 		hide()
+
 
 func _on_pressed():
 	hide()
@@ -27,4 +30,3 @@ func _on_pressed():
 		var car_obj = minecart_scene.instantiate()
 		$"..".add_child(car_obj)
 		car_obj.init(i)
-	

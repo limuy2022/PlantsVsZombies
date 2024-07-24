@@ -1,0 +1,23 @@
+name: GdScriptCheck
+
+on:
+  push:
+    branches: ["main", "dev"]
+  pull_request:
+    branches: ["main", "dev"]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install GdFmt
+        run: pip3 install "gdtoolkit==4.*"
+      - name: Format Check
+        run: gdformat . -c
+      - name: Linter Check
+        run:  gdlint .

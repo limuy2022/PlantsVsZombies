@@ -1,18 +1,20 @@
-[gd_scene load_steps=9 format=3 uid="uid://vma83vm8xme1"]
+[gd_scene load_steps=11 format=3 uid="uid://vma83vm8xme1"]
 
 [ext_resource type="Script" path="res://script/start.gd" id="1_diey2"]
 [ext_resource type="Texture2D" uid="uid://djgugfym6kmxs" path="res://resources/graphics/Screen/MainMenu.png" id="1_hcac3"]
 [ext_resource type="Texture2D" uid="uid://rair8nt8yqyr" path="res://resources/graphics/Screen/Adventure_0.png" id="2_tacmj"]
+[ext_resource type="PackedScene" uid="uid://b5j3xo4vubh8e" path="res://scene/main.tscn" id="2_w8i7s"]
+[ext_resource type="PackedScene" uid="uid://88poyd7nbbn8" path="res://scene/about.tscn" id="3_c30nq"]
 [ext_resource type="Texture2D" uid="uid://cyiex88drbapw" path="res://resources/graphics/Screen/Adventure_1.png" id="3_imcx1"]
 [ext_resource type="FontFile" uid="uid://kj73dfsyfggv" path="res://resources/fonts/DaLiangZiTiKu-1.ttf" id="6_ekou4"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_owyc4"]
-bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3vulg"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qwek3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_owyc4"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [node name="Start" type="Control"]
@@ -23,6 +25,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_diey2")
+main_scene = ExtResource("2_w8i7s")
+about_scene = ExtResource("3_c30nq")
 
 [node name="background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -52,9 +56,9 @@ offset_bottom = 498.0
 scale = Vector2(2.34909, 2.34909)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("6_ekou4")
-theme_override_styles/normal = SubResource("StyleBoxFlat_owyc4")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3vulg")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_qwek3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_owyc4")
 text = "关于"
 
 [connection signal="pressed" from="startgame" to="." method="_on_startgame_pressed"]

@@ -1,9 +1,10 @@
 extends Area2D
 
+signal plant_myself
 var sprite_frames_local
 var pack = false
 var follow = false
-signal plant_myself
+
 
 func init(path, numend):
 	sprite_frames_local = SpriteFrames.new()
@@ -14,12 +15,14 @@ func init(path, numend):
 	$"AnimatedSprite2D".sprite_frames = sprite_frames_local
 	$"AnimatedSprite2D".autoplay = "default"
 
+
 func del():
 	sprite_frames_local.free()
 	queue_free()
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if pack:
 		var pos = get_viewport().get_mouse_position()
 		var tmp = PlantsBarAutoload.turn_pos_to_grass(pos.x, pos.y)
@@ -32,7 +35,8 @@ func _process(delta):
 	if follow:
 		global_position = get_viewport().get_mouse_position()
 
-func _on_input_event(viewport, event, shape_idx):
+
+func _on_input_event(_viewport, event, _shape_idx):
 	# 种植植物
 	if event is InputEventMouseButton && event.pressed:
 		var pos = get_viewport().get_mouse_position()

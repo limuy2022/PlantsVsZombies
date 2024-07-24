@@ -74,10 +74,8 @@ func plant_myself():
 
 
 # 向上移动
-func move_up(delta, speed):
-	var p = Vector2(0, -1)
-	p = p.normalized() * speed
-	position += p * delta
+func move_up(y):
+	position.y += y
 
 
 # 记录当前坐标

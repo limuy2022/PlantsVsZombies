@@ -33,7 +33,7 @@ func init_sunflower(x, y):
 	global_position.x = x
 	zf = 1 if randi() % 2 else -1
 	self.vel.x = zf * self.vel.x
-	tween = create_tween().set_loops()
+	tween = tween.set_loops()
 	self.tween.tween_callback(self.throw).set_delay(0.01)
 
 

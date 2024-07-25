@@ -1,25 +1,14 @@
 extends Area2D
 
 var end_y
-var move_to_score = false
-# 是否按照函数来运行
-var function_path = false
-# 控制函数正负性
 var zf
+var vel = Vector2(0.3, -6)
 @onready var tween = create_tween()
-
-
-func function(x):
-	# 二次函数，模拟路径
-	return ((x - zf * 6) ** 2) - 40
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if randi() % 2:
-		zf = 1
-	else:
-		zf = -1
+	pass
 
 
 # 从天空中落下的阳光
@@ -31,35 +20,42 @@ func init_sky():
 	self.tween.tween_property(self, "global_position:y", end_y, end_y / 100)
 
 
+func throw():
+	self.position.x += vel.x
+	self.position.y += vel.y
+	vel.y += 0.3
+	if self.global_position.y - end_y >= 4 && vel.y > 0:
+		self.tween.kill()
+
+
 func init_sunflower(x, y):
-	end_y = y
-	function_path = true
+	end_y = y + 40
 	global_position.x = x
+	zf = 1 if randi() % 2 else -1
+	self.vel.x = zf * self.vel.x
+	tween = create_tween().set_loops()
+	self.tween.tween_callback(self.throw).set_delay(0.01)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if function_path:
-		var vel = Vector2(zf, 0)
-		position += vel.normalized() * 15 * delta
-		position.y = function(position.x)
-		if abs(global_position.y - end_y) < 4:
-			function_path = false
-	if move_to_score:
-		const GOTO_SCORE_SPEED = 500
-		var stop = $"/root/main/score".global_position
-		global_position = global_position.move_toward(stop, delta * GOTO_SCORE_SPEED)
-		if abs(global_position.x - stop.x) < 10 and abs(global_position.y - stop.y) < 10:
-			PlantsBarAutoload.sun += PlantsBarAutoload.sun_add_once
-			queue_free()
+func _process(_delta):
+	pass
+
+
+func collected_success():
+	PlantsBarAutoload.sun += PlantsBarAutoload.sun_add_once
+	queue_free()
 
 
 func _on_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton && event.pressed:
 		# 移动到计数牌，删除自身
-		move_to_score = true
 		self.tween.kill()
-		function_path = false
+		self.tween = create_tween()
+		var stop = $"/root/main/score".global_position
+		var time = (stop - self.global_position).length() / 500
+		self.tween.tween_property(self, "global_position", stop, time)
+		self.tween.tween_callback(self.collected_success)
 		$disappeartimer.stop()
 
 

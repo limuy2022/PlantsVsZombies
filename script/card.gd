@@ -75,7 +75,7 @@ func plant_myself():
 
 # 向上移动
 func move_up(y):
-	position.y += y
+	position.y -= y
 
 
 # 记录当前坐标

@@ -4,5 +4,3 @@
 gdformat .
 # lint gdscript
 gdlint .
-# save
-git add -A

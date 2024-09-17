@@ -119,15 +119,15 @@ func _on_pressed():
 	if has_chosen:
 		# 已经选中，再次点击说明取消选择
 		has_chosen = false
-		position = on_board_pos
+		create_tween().tween_property(self, "position", on_board_pos, 0.2)
 		PlantsBarAutoload.cancel(board_index)
 	else:
 		# 选中该植物
 		if PlantsBarAutoload.choose == PlantsBarAutoload.MAXNUM:
 			return
 		var pos_get = PlantsBarAutoload.add()
-		position.y = PlantsBarAutoload.BAR_Y
-		position.x = pos_get[1]
+		var target_pos = Vector2(pos_get[1], PlantsBarAutoload.BAR_Y)
+		create_tween().tween_property(self, "position", target_pos, 0.2)
 		board_index = pos_get[0]
 		has_chosen = true
 

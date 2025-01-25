@@ -5,7 +5,7 @@
 A PlantsVsZombies game made by godot engine
 The resources are from the original version of plants vs zombies and the deadcell
 
-I plan to add the boss of deadcells in the game.战
+I plan to add the boss of deadcells in the game.
 The bosses ready to be added:
 
 |boss|

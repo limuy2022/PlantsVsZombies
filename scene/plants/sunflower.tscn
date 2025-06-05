@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://cdxg440k0rhpj"]
 
-[ext_resource type="Script" path="res://script/plants/sunflower.gd" id="1_0cgy4"]
+[ext_resource type="Script" uid="uid://c1h24njuhl4gi" path="res://script/plants/sunflower.gd" id="1_0cgy4"]
 [ext_resource type="Texture2D" uid="uid://dm8ft8cdl7c8b" path="res://resources/graphics/Plants/SunFlower/SunFlower_0.png" id="1_1f5in"]
 [ext_resource type="Texture2D" uid="uid://brv1ruke4kji6" path="res://resources/graphics/Plants/SunFlower/SunFlower_1.png" id="2_d5fdn"]
 [ext_resource type="Texture2D" uid="uid://ovmdrx1cdl3e" path="res://resources/graphics/Plants/SunFlower/SunFlower_2.png" id="3_ylrlk"]

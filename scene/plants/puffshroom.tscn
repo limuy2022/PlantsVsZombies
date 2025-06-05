@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://w1va5ia8ugxc"]
 
 [ext_resource type="Texture2D" uid="uid://wsxg57kd88vv" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_0.png" id="1_6vnca"]
-[ext_resource type="Script" path="res://script/plants/puffshroom.gd" id="1_xliq6"]
+[ext_resource type="Script" uid="uid://rrg2yu73gbkp" path="res://script/plants/puffshroom.gd" id="1_xliq6"]
 [ext_resource type="Texture2D" uid="uid://bn0f22s4lspbl" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_1.png" id="2_61tm5"]
 [ext_resource type="Texture2D" uid="uid://pdq25ib25v3a" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_2.png" id="3_jvxfk"]
 [ext_resource type="Texture2D" uid="uid://bitng6nk11cex" path="res://resources/graphics/Plants/PuffShroom/PuffShroom/PuffShroom_3.png" id="4_44mqt"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=29 format=3 uid="uid://ckmdtoe42cbvu"]
 
-[ext_resource type="Script" path="res://script/plants/peashooter.gd" id="1_qqexd"]
+[ext_resource type="Script" uid="uid://bgawn1bd3qkd2" path="res://script/plants/peashooter.gd" id="1_qqexd"]
 [ext_resource type="Texture2D" uid="uid://3mfrcfea8m83" path="res://resources/graphics/Plants/PeaShooter/PeaShooter_0.png" id="2_b53ch"]
 [ext_resource type="Texture2D" uid="uid://cc5473fbhgeg7" path="res://resources/graphics/Plants/PeaShooter/PeaShooter_1.png" id="3_swcxh"]
 [ext_resource type="Texture2D" uid="uid://caqmdiluvj5h2" path="res://resources/graphics/Plants/PeaShooter/PeaShooter_2.png" id="4_oki7x"]

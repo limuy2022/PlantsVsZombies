@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=3 uid="uid://y3ylln7i2sqn"]
 
-[ext_resource type="Script" path="res://script/plants/sun.gd" id="1_4b4c1"]
+[ext_resource type="Script" uid="uid://btrxmasnhm8e3" path="res://script/plants/sun.gd" id="1_4b4c1"]
 [ext_resource type="Texture2D" uid="uid://bsr8s2afjg5k6" path="res://resources/graphics/Plants/Sun/Sun_0.png" id="1_lyo1b"]
 [ext_resource type="Texture2D" uid="uid://budu5p4443fgy" path="res://resources/graphics/Plants/Sun/Sun_1.png" id="2_ut2pf"]
 [ext_resource type="Texture2D" uid="uid://csufukfrogc3m" path="res://resources/graphics/Plants/Sun/Sun_2.png" id="3_mt6aj"]

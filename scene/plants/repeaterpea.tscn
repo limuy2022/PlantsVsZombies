@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=3 uid="uid://d2hut3jllbjmb"]
 
 [ext_resource type="Texture2D" uid="uid://cxvw5r8yafwbs" path="res://resources/graphics/Plants/RepeaterPea/RepeaterPea_0.png" id="1_b41lj"]
-[ext_resource type="Script" path="res://script/plants/repeaterpea.gd" id="1_ymqby"]
+[ext_resource type="Script" uid="uid://cu1ira0gsh3oj" path="res://script/plants/repeaterpea.gd" id="1_ymqby"]
 [ext_resource type="Texture2D" uid="uid://dydtl0rxlclpo" path="res://resources/graphics/Plants/RepeaterPea/RepeaterPea_1.png" id="2_5nht3"]
 [ext_resource type="Texture2D" uid="uid://d2311yq86gdxv" path="res://resources/graphics/Plants/RepeaterPea/RepeaterPea_2.png" id="3_e65pc"]
 [ext_resource type="Texture2D" uid="uid://dmfyjexv5o88" path="res://resources/graphics/Plants/RepeaterPea/RepeaterPea_3.png" id="4_o233j"]

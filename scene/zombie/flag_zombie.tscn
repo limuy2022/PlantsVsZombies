@@ -1,6 +1,6 @@
 [gd_scene load_steps=57 format=3 uid="uid://p5uy0rof6amo"]
 
-[ext_resource type="Script" path="res://script/zombie/normal_zombie.gd" id="1_00j88"]
+[ext_resource type="Script" uid="uid://car627pf4ve2b" path="res://script/zombie/normal_zombie.gd" id="1_00j88"]
 [ext_resource type="Texture2D" uid="uid://ke1xlsumb3et" path="res://resources/graphics/Zombies/FlagZombie/FlagZombie/FlagZombie_0.png" id="2_0wqep"]
 [ext_resource type="Texture2D" uid="uid://clmkxu3kax0mi" path="res://resources/graphics/Zombies/FlagZombie/FlagZombieAttack/FlagZombieAttack_0.png" id="2_fd0a0"]
 [ext_resource type="Texture2D" uid="uid://dcsujd1ek52ns" path="res://resources/graphics/Zombies/FlagZombie/FlagZombie/FlagZombie_1.png" id="3_4lg0q"]

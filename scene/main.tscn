@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://b5j3xo4vubh8e"]
 
-[ext_resource type="Script" path="res://script/main.gd" id="1_fjoh4"]
+[ext_resource type="Script" uid="uid://dvtpjmjipnxlb" path="res://script/main.gd" id="1_fjoh4"]
 [ext_resource type="Texture2D" uid="uid://vf5xloqepm5t" path="res://resources/graphics/Screen/ChooserBackground.png" id="2_bsqlv"]
-[ext_resource type="Script" path="res://script/score.gd" id="3_mx5tl"]
+[ext_resource type="Script" uid="uid://d1ep71m8ik7e3" path="res://script/score.gd" id="3_mx5tl"]
 [ext_resource type="Texture2D" uid="uid://8a6adp2pegib" path="res://resources/graphics/Screen/plants_board.png" id="3_yj82m"]
-[ext_resource type="Script" path="res://script/plants_menu.gd" id="4_a2jr2"]
+[ext_resource type="Script" uid="uid://dexw3ko7ifvud" path="res://script/plants_menu.gd" id="4_a2jr2"]
 [ext_resource type="Texture2D" uid="uid://c001516sdml2" path="res://resources/graphics/Screen/StartButton.png" id="14_8ce7h"]
-[ext_resource type="Script" path="res://script/start_fight.gd" id="15_8576h"]
+[ext_resource type="Script" uid="uid://c36eh802ddk42" path="res://script/start_fight.gd" id="15_8576h"]
 
 [node name="main" type="Node2D"]
 script = ExtResource("1_fjoh4")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://c31i1x7ve5vs"]
 
-[ext_resource type="Script" path="res://script/plants/spikeweed.gd" id="1_0puo5"]
+[ext_resource type="Script" uid="uid://b22188c33yxr" path="res://script/plants/spikeweed.gd" id="1_0puo5"]
 [ext_resource type="Texture2D" uid="uid://6718y5goax78" path="res://resources/graphics/Plants/Spikeweed/Spikeweed/Spikeweed_0.png" id="1_frn0c"]
 [ext_resource type="Texture2D" uid="uid://yb2ym28i5jpp" path="res://resources/graphics/Plants/Spikeweed/Spikeweed/Spikeweed_1.png" id="2_l1778"]
 [ext_resource type="Texture2D" uid="uid://56iil6i5ueu3" path="res://resources/graphics/Plants/Spikeweed/Spikeweed/Spikeweed_2.png" id="3_311bi"]

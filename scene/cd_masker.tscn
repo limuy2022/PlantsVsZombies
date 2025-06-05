@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dbx421exfb584"]
 
-[ext_resource type="Script" path="res://scene/cd_masker.gd" id="1_a7sos"]
+[ext_resource type="Script" uid="uid://dxf2y4817s3sc" path="res://scene/cd_masker.gd" id="1_a7sos"]
 [ext_resource type="Texture2D" uid="uid://dcmggpq0by7dm" path="res://resources/graphics/card_mask.png" id="1_vjax4"]
 
 [node name="CdMasker" type="Control"]

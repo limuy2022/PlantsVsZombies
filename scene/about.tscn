@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://88poyd7nbbn8"]
 
 [ext_resource type="FontFile" uid="uid://b5rpklf8djnhs" path="res://resources/fonts/ShangShouYuRenTi-2.ttf" id="1_jbr7g"]
-[ext_resource type="Script" path="res://script/return.gd" id="2_8yrws"]
+[ext_resource type="Script" uid="uid://b80abdv4n8t6q" path="res://script/return.gd" id="2_8yrws"]
 
 [node name="about" type="Control"]
 layout_mode = 3

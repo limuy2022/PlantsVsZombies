@@ -1,7 +1,7 @@
 extends "res://script/plants/basic.gd"
 
 var bullet_scene = preload("res://scene/plants/bullets/normal_bullet.tscn")
-var health = 60
+var health = 30
 
 
 # Called when the node enters the scene tree for the first time.
